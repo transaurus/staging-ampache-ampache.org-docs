@@ -1,0 +1,42 @@
+{
+  "link.item.label.Website Repo": {
+    "message": "Website Repo",
+    "description": "The label of footer link with label=Website Repo linking to https://github.com/ampache/ampache.org-docs"
+  },
+  "link.item.label.Old Site": {
+    "message": "Old Site",
+    "description": "The label of footer link with label=Old Site linking to https://ampache.org/old"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/ampache/ampache"
+  },
+  "link.item.label.Docker Hub": {
+    "message": "Docker Hub",
+    "description": "The label of footer link with label=Docker Hub linking to https://hub.docker.com/repository/docker/ampache/ampache"
+  },
+  "link.item.label.Twitter": {
+    "message": "Twitter",
+    "description": "The label of footer link with label=Twitter linking to https://twitter.com/ampache"
+  },
+  "link.item.label.Mastodon": {
+    "message": "Mastodon",
+    "description": "The label of footer link with label=Mastodon linking to https://fosstodon.org/@ampache"
+  },
+  "link.item.label.Bluesky": {
+    "message": "Bluesky",
+    "description": "The label of footer link with label=Bluesky linking to https://bsky.app/profile/ampache.bsky.social"
+  },
+  "link.item.label.Telegram": {
+    "message": "Telegram",
+    "description": "The label of footer link with label=Telegram linking to https://t.me/ampache"
+  },
+  "link.item.label.r/ampache": {
+    "message": "r/ampache",
+    "description": "The label of footer link with label=r/ampache linking to https://www.reddit.com/r/ampache"
+  },
+  "copyright": {
+    "message": "Copyright © 2001 - 2026 Ampache.org",
+    "description": "The footer copyright"
+  }
+}

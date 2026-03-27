@@ -1,0 +1,62 @@
+---
+title: "Podcast Episode Browse"
+metaTitle: "Podcast Episode Browse"
+description: "API documentation"
+---
+
+## Podcast Episode Browse
+
+This page focuses on a single object type.
+
+Refer to the main [Api Browse methods](/api/api-browse) page for further information regarding the other Browse types method.
+
+## Available browse filters
+
+You can filter responses by the object name using the following conditions.
+
+e.g. `cond=like,unplayed+tracks`
+
+* Name/Title string filters
+  * like
+  * not_like
+  * equal
+  * regex_match
+  * regex_not_match
+  * starts_with
+  * not_starts_with
+
+```PHP
+    public const FILTERS = array(
+        'podcast',
+        'catalog',
+        'catalog_enabled',
+        'user_catalog',
+        'add_gt',
+        'add_lt',
+        'unplayed'
+    );
+```
+
+## Available browse sorts
+
+```PHP
+    protected array $sorts = array(
+        'id',
+        'podcast',
+        'title',
+        'name',
+        'catalog',
+        'category',
+        'author',
+        'time',
+        'pubdate',
+        'state',
+        'rand',
+        'addition_time',
+        'total_count',
+        'total_skip',
+        'rating',
+        'user_flag',
+        'user_flag_rating',
+    );
+```
