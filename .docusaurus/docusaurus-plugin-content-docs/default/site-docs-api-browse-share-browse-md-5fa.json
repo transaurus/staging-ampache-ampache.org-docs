@@ -5,7 +5,7 @@
   "source": "@site/docs/api/browse/share-browse.md",
   "sourceDirName": "api/browse",
   "slug": "/api/browse/share-browse",
-  "permalink": "/api/browse/share-browse",
+  "permalink": "/zh-Hans/api/browse/share-browse",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -18,10 +18,10 @@
   "sidebar": "api",
   "previous": {
     "title": "Podcast Browse",
-    "permalink": "/api/browse/podcast-browse"
+    "permalink": "/zh-Hans/api/browse/podcast-browse"
   },
   "next": {
     "title": "Song Browse",
-    "permalink": "/api/browse/song-browse"
+    "permalink": "/zh-Hans/api/browse/song-browse"
   }
 }

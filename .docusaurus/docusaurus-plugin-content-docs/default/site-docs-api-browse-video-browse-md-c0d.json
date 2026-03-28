@@ -5,7 +5,7 @@
   "source": "@site/docs/api/browse/video-browse.md",
   "sourceDirName": "api/browse",
   "slug": "/api/browse/video-browse",
-  "permalink": "/api/browse/video-browse",
+  "permalink": "/zh-Hans/api/browse/video-browse",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -18,10 +18,10 @@
   "sidebar": "api",
   "previous": {
     "title": "User Browse",
-    "permalink": "/api/browse/user-browse"
+    "permalink": "/zh-Hans/api/browse/user-browse"
   },
   "next": {
     "title": "Advanced Search",
-    "permalink": "/api/api-advanced-search"
+    "permalink": "/zh-Hans/api/api-advanced-search"
   }
 }

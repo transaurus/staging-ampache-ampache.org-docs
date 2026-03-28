@@ -5,7 +5,7 @@
   "source": "@site/docs/api/versions/api-6.0/api-advanced-search.md",
   "sourceDirName": "api/versions/api-6.0",
   "slug": "/api/versions/api-6.0/api-advanced-search",
-  "permalink": "/api/versions/api-6.0/api-advanced-search",
+  "permalink": "/zh-Hans/api/versions/api-6.0/api-advanced-search",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -18,10 +18,10 @@
   "sidebar": "api",
   "previous": {
     "title": "Errors",
-    "permalink": "/api/versions/api-6.0/api-errors"
+    "permalink": "/zh-Hans/api/versions/api-6.0/api-errors"
   },
   "next": {
     "title": "API5.1",
-    "permalink": "/api/versions/api-5.1/"
+    "permalink": "/zh-Hans/api/versions/api-5.1/"
   }
 }

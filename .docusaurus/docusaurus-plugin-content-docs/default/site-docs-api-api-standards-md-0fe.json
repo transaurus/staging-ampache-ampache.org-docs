@@ -5,7 +5,7 @@
   "source": "@site/docs/api/api-standards.md",
   "sourceDirName": "api",
   "slug": "/api/api-standards",
-  "permalink": "/api/api-standards",
+  "permalink": "/zh-Hans/api/api-standards",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -18,10 +18,10 @@
   "sidebar": "api",
   "previous": {
     "title": "Ampache API",
-    "permalink": "/api/"
+    "permalink": "/zh-Hans/api/"
   },
   "next": {
     "title": "XML Methods",
-    "permalink": "/api/api-xml-methods"
+    "permalink": "/zh-Hans/api/api-xml-methods"
   }
 }

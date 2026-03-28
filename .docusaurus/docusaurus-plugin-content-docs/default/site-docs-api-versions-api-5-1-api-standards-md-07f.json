@@ -5,7 +5,7 @@
   "source": "@site/docs/api/versions/api-5.1/api-standards.md",
   "sourceDirName": "api/versions/api-5.1",
   "slug": "/api/versions/api-5.1/api-standards",
-  "permalink": "/api/versions/api-5.1/api-standards",
+  "permalink": "/zh-Hans/api/versions/api-5.1/api-standards",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -18,10 +18,10 @@
   "sidebar": "api",
   "previous": {
     "title": "API5.1",
-    "permalink": "/api/versions/api-5.1/"
+    "permalink": "/zh-Hans/api/versions/api-5.1/"
   },
   "next": {
     "title": "XML Methods",
-    "permalink": "/api/versions/api-5.1/api-xml-methods"
+    "permalink": "/zh-Hans/api/versions/api-5.1/api-xml-methods"
   }
 }

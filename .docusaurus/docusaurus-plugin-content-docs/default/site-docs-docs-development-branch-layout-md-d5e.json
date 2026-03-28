@@ -5,7 +5,7 @@
   "source": "@site/docs/docs/development/branch-layout.md",
   "sourceDirName": "docs/development",
   "slug": "/docs/development/branch-layout",
-  "permalink": "/docs/development/branch-layout",
+  "permalink": "/zh-Hans/docs/development/branch-layout",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -18,10 +18,10 @@
   "sidebar": "api",
   "previous": {
     "title": "Translations",
-    "permalink": "/docs/development/TRANSLATIONS"
+    "permalink": "/zh-Hans/docs/development/TRANSLATIONS"
   },
   "next": {
     "title": "Issues",
-    "permalink": "/docs/development/issue-template"
+    "permalink": "/zh-Hans/docs/development/issue-template"
   }
 }

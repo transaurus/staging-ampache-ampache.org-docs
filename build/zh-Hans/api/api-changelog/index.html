@@ -1,0 +1,1800 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-api/api-changelog" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">API Changelog | Ampache</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://ampache.org/zh-Hans/api/api-changelog"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" property="og:locale:alternate" content="en"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="API Changelog | Ampache"><meta data-rh="true" name="description" content="API Changelog"><meta data-rh="true" property="og:description" content="API Changelog"><link data-rh="true" rel="icon" href="/zh-Hans/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://ampache.org/zh-Hans/api/api-changelog"><link data-rh="true" rel="alternate" href="https://ampache.org/api/api-changelog" hreflang="en"><link data-rh="true" rel="alternate" href="https://ampache.org/zh-Hans/api/api-changelog" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://ampache.org/api/api-changelog" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"API","item":"https://ampache.org/zh-Hans/api/"},{"@type":"ListItem","position":2,"name":"API Changelog","item":"https://ampache.org/zh-Hans/api/api-changelog"}]}</script><link rel="stylesheet" href="/zh-Hans/assets/css/styles.0abe6b77.css">
+<script src="/zh-Hans/assets/js/runtime~main.a5f45cd9.js" defer="defer"></script>
+<script src="/zh-Hans/assets/js/main.b091c592.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/zh-Hans/"><div class="navbar__logo"><img src="/zh-Hans/img/logo/ampache-logo.png" alt="Ampache Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/zh-Hans/img/logo/ampache-logo.png" alt="Ampache Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Ampache</b></a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a class="navbar__item navbar__link" href="/zh-Hans/demo">Demo</a><a class="navbar__item navbar__link" href="/zh-Hans/donate">Donate</a><a class="navbar__item navbar__link" href="/zh-Hans/docker">Docker</a><a class="navbar__item navbar__link" href="/zh-Hans/download">Download</a><a class="navbar__item navbar__link" href="/zh-Hans/docs">Wiki</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/zh-Hans/api">API</a><a class="navbar__item navbar__link navbar-links" href="/zh-Hans/links">Links</a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/zh-Hans/"><span title="Ampache" class="linkLabel_WmDU">Ampache</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/zh-Hans/demo"><span title="Demo" class="linkLabel_WmDU">Demo</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/zh-Hans/donate"><span title="Donate" class="linkLabel_WmDU">Donate</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/zh-Hans/docker"><span title="Docker" class="linkLabel_WmDU">Docker</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/zh-Hans/download"><span title="Download" class="linkLabel_WmDU">Download</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/zh-Hans/docs/"><span title="Wiki" class="categoryLinkLabel_W154">Wiki</span></a><button aria-label="Expand sidebar category &#x27;Wiki&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/zh-Hans/api/"><span title="API" class="categoryLinkLabel_W154">API</span></a><button aria-label="Collapse sidebar category &#x27;API&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hans/api/api-standards"><span title="Standards" class="linkLabel_WmDU">Standards</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hans/api/api-xml-methods"><span title="XML Methods" class="linkLabel_WmDU">XML Methods</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hans/api/api-json-methods"><span title="JSON Methods" class="linkLabel_WmDU">JSON Methods</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hans/api/api-errors"><span title="Errors" class="linkLabel_WmDU">Errors</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hans/api/api-examples"><span title="API Examples" class="linkLabel_WmDU">API Examples</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/zh-Hans/api/api-changelog"><span title="API Changelog" class="linkLabel_WmDU">API Changelog</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hans/docs/configuration/acl"><span title="Access Control Lists" class="linkLabel_WmDU">Access Control Lists</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hans/api/api-media-methods"><span title="Media Methods" class="linkLabel_WmDU">Media Methods</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/zh-Hans/api/api-browse"><span title="Browse Methods" class="categoryLinkLabel_W154">Browse Methods</span></a><button aria-label="Expand sidebar category &#x27;Browse Methods&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/zh-Hans/api/api-advanced-search"><span title="Advanced Search" class="categoryLinkLabel_W154">Advanced Search</span></a><button aria-label="Expand sidebar category &#x27;Advanced Search&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hans/api/subsonic"><span title="Subsonic API" class="linkLabel_WmDU">Subsonic API</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/zh-Hans/api/api-5/"><span title="API5" class="categoryLinkLabel_W154">API5</span></a><button aria-label="Expand sidebar category &#x27;API5&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/zh-Hans/api/api-4/"><span title="API4" class="categoryLinkLabel_W154">API4</span></a><button aria-label="Expand sidebar category &#x27;API4&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/zh-Hans/api/api-3/"><span title="API3" class="categoryLinkLabel_W154">API3</span></a><button aria-label="Expand sidebar category &#x27;API3&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/zh-Hans/api/versions/"><span title="Past Releases" class="categoryLinkLabel_W154">Past Releases</span></a><button aria-label="Expand sidebar category &#x27;Past Releases&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/zh-Hans/links"><span title="Links" class="linkLabel_WmDU">Links</span></a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/zh-Hans/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/zh-Hans/api/"><span>API</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">API Changelog</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>API Changelog</h1></header><h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-691-build-12">API 6.9.1 Build 12<a href="#api-691-build-12" class="hash-link" aria-label="Direct link to API 6.9.1 Build 12" title="Direct link to API 6.9.1 Build 12" translate="no">​</a></h2>
+<p>This version is being released for Ampache7 <strong>only</strong></p>
+<p>To ensure that there are no issues with clients checking for single int versions
+we will keep on 6.9.x and resume build number versioning until Ampache 8</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added-691012">Added (691012)<a href="#added-691012" class="hash-link" aria-label="Direct link to Added (691012)" title="Direct link to Added (691012)" translate="no">​</a></h3>
+<ul>
+<li class="">ALL<!-- -->
+<ul>
+<li class="">Split REST processes into separate applications</li>
+<li class="">Normalize object types parameter (<code>type</code>) to allow resource paths</li>
+<li class="">Get parsed body from <code>PATCH</code>, <code>PUT</code> and <code>DELETE</code></li>
+</ul>
+</li>
+<li class="">API6<!-- -->
+<ul>
+<li class="">Add alias <code>catalog_add</code> for <code>catalog_create</code></li>
+<li class="">Add alias <code>podcast_update</code> for <code>update_podcast</code></li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-691-build-11">API 6.9.1 Build 11<a href="#api-691-build-11" class="hash-link" aria-label="Direct link to API 6.9.1 Build 11" title="Direct link to API 6.9.1 Build 11" translate="no">​</a></h2>
+<p>This version is being released for Ampache7 <strong>only</strong></p>
+<p>To ensure that there are no issues with clients checking for single int versions
+we will keep on 6.9.x and resume build number versioning until Ampache 8</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added-691011">Added (691011)<a href="#added-691011" class="hash-link" aria-label="Direct link to Added (691011)" title="Direct link to Added (691011)" translate="no">​</a></h3>
+<ul>
+<li class="">API6<!-- -->
+<ul>
+<li class="">handshake: Add <code>streamtoken</code> to responses</li>
+<li class="">ping: Add <code>streamtoken</code> to responses</li>
+<li class="">url_to_song: Add <code>filter</code> as an alias of <code>url</code></li>
+<li class="">catalog_action: Add <code>filter</code> as an alias of <code>catalog</code></li>
+<li class="">catalog_file: Add <code>filter</code> as an alias of <code>catalog</code></li>
+<li class="">catalog_folder: Add <code>filter</code> as an alias of <code>catalog</code></li>
+<li class="">flag: Add <code>filter</code> as an alias of <code>id</code></li>
+<li class="">record_play: Add <code>filter</code> as an alias of <code>id</code></li>
+<li class="">update_art: Add <code>filter</code> as an alias of <code>id</code></li>
+<li class="">update_artist_info: Add <code>filter</code> as an alias of <code>id</code></li>
+<li class="">update_from_tags: Add <code>filter</code> as an alias of <code>id</code></li>
+<li class="">update_podcast: Add <code>id</code> as an alias of <code>filter</code></li>
+<li class="">download: Add <code>filter</code> as an alias of <code>id</code></li>
+<li class="">get_art: Add <code>filter</code> as an alias of <code>id</code></li>
+<li class="">stream: Add <code>filter</code> as an alias of <code>id</code></li>
+<li class="">localplay: Add <code>filter</code> as an alias of <code>oid</code></li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-691011">Fixed (691011)<a href="#fixed-691011" class="hash-link" aria-label="Direct link to Fixed (691011)" title="Direct link to Fixed (691011)" translate="no">​</a></h3>
+<ul>
+<li class="">ALL<!-- -->
+<ul>
+<li class="">podcast_update documentation incorrect so add a fallback for the id parameter</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-690-build-10">API 6.9.0 Build 10<a href="#api-690-build-10" class="hash-link" aria-label="Direct link to API 6.9.0 Build 10" title="Direct link to API 6.9.0 Build 10" translate="no">​</a></h2>
+<p>This version is being released for Ampache7 <strong>only</strong></p>
+<p>To ensure that there are no issues with clients checking for single int versions
+we will keep on 6.9.x and resume build number versioning until Ampache 8</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added-690010">Added (690010)<a href="#added-690010" class="hash-link" aria-label="Direct link to Added (690010)" title="Direct link to Added (690010)" translate="no">​</a></h3>
+<ul>
+<li class="">API6<!-- -->
+<ul>
+<li class="">New Method: get_lyrics (Return Database lyrics or search with plugins by Song id)</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-690">API 6.9.0<a href="#api-690" class="hash-link" aria-label="Direct link to API 6.9.0" title="Direct link to API 6.9.0" translate="no">​</a></h2>
+<p>This version is being released for Ampache7 <strong>only</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added-690000">Added (690000)<a href="#added-690000" class="hash-link" aria-label="Direct link to Added (690000)" title="Direct link to Added (690000)" translate="no">​</a></h3>
+<ul>
+<li class="">ALL<!-- -->
+<ul>
+<li class="">Support POST requests for all methods</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-690000">Fixed (690000)<a href="#fixed-690000" class="hash-link" aria-label="Direct link to Fixed (690000)" title="Direct link to Fixed (690000)" translate="no">​</a></h3>
+<ul>
+<li class="">ALL<!-- -->
+<ul>
+<li class="">Localplay methods might not complete when pulling status from missing controllers</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-680">API 6.8.0<a href="#api-680" class="hash-link" aria-label="Direct link to API 6.8.0" title="Direct link to API 6.8.0" translate="no">​</a></h2>
+<p>This version is being released for Ampache7 <strong>only</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added-680000">Added (680000)<a href="#added-680000" class="hash-link" aria-label="Direct link to Added (680000)" title="Direct link to Added (680000)" translate="no">​</a></h3>
+<ul>
+<li class="">ALL<!-- -->
+<ul>
+<li class="">Support regular handshake and ping actions with a Bearer Token</li>
+</ul>
+</li>
+<li class="">API6<!-- -->
+<ul>
+<li class="">New Method: search_rules (Get a list of valid search rules per search type)</li>
+<li class="">user_playlists: Add include parameter to get song data</li>
+<li class="">user_smartlists: Add include parameter to get song data</li>
+<li class="">toggle_follow: Return errors when the users aren&#x27;t found</li>
+<li class="">deprecation warnings from tag methods in the main API handler</li>
+</ul>
+</li>
+<li class="">API5<!-- -->
+<ul>
+<li class="">toggle_follow: Return errors when the users aren&#x27;t found</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="changed-680000">Changed (680000)<a href="#changed-680000" class="hash-link" aria-label="Direct link to Changed (680000)" title="Direct link to Changed (680000)" translate="no">​</a></h3>
+<ul>
+<li class="">API6<!-- -->
+<ul>
+<li class="">browse: don&#x27;t require <code>catalog</code> when browsing a <code>catalog</code></li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-680000">Fixed (680000)<a href="#fixed-680000" class="hash-link" aria-label="Direct link to Fixed (680000)" title="Direct link to Fixed (680000)" translate="no">​</a></h3>
+<ul>
+<li class="">ALL<!-- -->
+<ul>
+<li class="">user_update: incorrect parameter check for <code>filter</code> instead of <code>username</code></li>
+<li class="">get_indexes: XML data may generate extra root elements</li>
+<li class="">user_create: validate <code>disable</code> bool with make_bool</li>
+<li class="">playlists: validate <code>show_dupes</code> bool with make_bool</li>
+<li class="">get_bookmark: validate <code>include</code> and <code>all</code> bools with make_bool</li>
+<li class="">flag: validate <code>include</code> bool with make_bool</li>
+<li class="">bookmarks: validate <code>include</code> bool with make_bool</li>
+<li class="">bookmark: validate <code>include</code> bool with make_bool</li>
+<li class="">bookmark_create: validate <code>include</code> bool with make_bool</li>
+<li class="">bookmark_edit: validate <code>include</code> bool with make_bool
+API6</li>
+<li class=""><code>album</code> and <code>albums</code> include didn&#x27;t always work correctly</li>
+<li class=""><code>artist</code> and <code>artists</code> include fixes
+API5</li>
+<li class="">user_edit: incorrect parameter check for <code>filter</code> instead of <code>username</code></li>
+<li class="">bookmark: Bookmark is a valid <code>type</code>
+API3</li>
+<li class="">genres: fallback function missing</li>
+<li class="">genre: fallback function missing</li>
+<li class="">genre_songs: fallback function missing</li>
+<li class="">genre_artists: fallback function missing</li>
+<li class="">genre_albums: fallback function missing</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-673">API 6.7.3<a href="#api-673" class="hash-link" aria-label="Direct link to API 6.7.3" title="Direct link to API 6.7.3" translate="no">​</a></h2>
+<p>This version is being released for Ampache7 <strong>only</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added-673000">Added (673000)<a href="#added-673000" class="hash-link" aria-label="Direct link to Added (673000)" title="Direct link to Added (673000)" translate="no">​</a></h3>
+<ul>
+<li class="">API6<!-- -->
+<ul>
+<li class="">Add mbid_group to <code>album</code> data responses</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-673000">Fixed (673000)<a href="#fixed-673000" class="hash-link" aria-label="Direct link to Fixed (673000)" title="Direct link to Fixed (673000)" translate="no">​</a></h3>
+<ul>
+<li class="">ALL<!-- -->
+<ul>
+<li class="">handshake: Check if auth is sent as a valid session and don&#x27;t try to create a new one</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-672">API 6.7.2<a href="#api-672" class="hash-link" aria-label="Direct link to API 6.7.2" title="Direct link to API 6.7.2" translate="no">​</a></h2>
+<p>This version is being released for Ampache7 <strong>only</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="changed-672000">Changed (672000)<a href="#changed-672000" class="hash-link" aria-label="Direct link to Changed (672000)" title="Direct link to Changed (672000)" translate="no">​</a></h3>
+<ul>
+<li class="">Header auth using a bearer token will return valid sessions on handshake and ping</li>
+<li class="">Header auth for other methods will hide the session behind an MD5 hash of the username (previous behaviour)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-671">API 6.7.1<a href="#api-671" class="hash-link" aria-label="Direct link to API 6.7.1" title="Direct link to API 6.7.1" translate="no">​</a></h2>
+<p>This version is being released for Ampache7 <strong>only</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added-671000">Added (671000)<a href="#added-671000" class="hash-link" aria-label="Direct link to Added (671000)" title="Direct link to Added (671000)" translate="no">​</a></h3>
+<ul>
+<li class="">API6<!-- -->
+<ul>
+<li class="">get_art: Extend <code>type</code> parameter to include &#x27;label&#x27;, &#x27;live_stream&#x27;, &#x27;search&#x27;, &#x27;user&#x27;, &#x27;video&#x27;</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-670">API 6.7.0<a href="#api-670" class="hash-link" aria-label="Direct link to API 6.7.0" title="Direct link to API 6.7.0" translate="no">​</a></h2>
+<p>This version is being released for Ampache7 <strong>only</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added-670000">Added (670000)<a href="#added-670000" class="hash-link" aria-label="Direct link to Added (670000)" title="Direct link to Added (670000)" translate="no">​</a></h3>
+<ul>
+<li class="">API6<!-- -->
+<ul>
+<li class="">New Method: song_tags (Read and return all file and enabled plugin tags for the song)</li>
+<li class="">get_art: return error 404 on bad size dimensions</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="changed-670000">Changed (670000)<a href="#changed-670000" class="hash-link" aria-label="Direct link to Changed (670000)" title="Direct link to Changed (670000)" translate="no">​</a></h3>
+<ul>
+<li class="">ALL<!-- -->
+<ul>
+<li class="">localplay will not clear mpd playlists when stopped if <code>clear=0</code></li>
+<li class="">Ensure lowercase parameters are set on localplay calls</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-670000">Fixed (670000)<a href="#fixed-670000" class="hash-link" aria-label="Direct link to Fixed (670000)" title="Direct link to Fixed (670000)" translate="no">​</a></h3>
+<ul>
+<li class="">ALL<!-- -->
+<ul>
+<li class="">get_art: Correctly size and scale art responses</li>
+</ul>
+</li>
+<li class="">API6<!-- -->
+<ul>
+<li class="">catalog_add: typing for adding beets catalog</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-668">API 6.6.8<a href="#api-668" class="hash-link" aria-label="Direct link to API 6.6.8" title="Direct link to API 6.6.8" translate="no">​</a></h2>
+<p>This version is being released for Ampache7 <strong>only</strong></p>
+<p>This is a massive update to the code typing and backend quality without changing function.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="changed-668000">Changed (668000)<a href="#changed-668000" class="hash-link" aria-label="Direct link to Changed (668000)" title="Direct link to Changed (668000)" translate="no">​</a></h3>
+<ul>
+<li class="">ALL<!-- -->
+<ul>
+<li class="">Typed parameters, properties and arrays for all API versions</li>
+<li class="">Ensure nullable input is allowed to be null in the code</li>
+<li class="">Make sure size dimensions for <code>get_art</code> calls are valid and split correctly</li>
+</ul>
+</li>
+<li class="">API6<!-- -->
+<ul>
+<li class="">Empty results on <code>list</code> calls will send an empty response</li>
+</ul>
+</li>
+<li class="">API5<!-- -->
+<ul>
+<li class=""><code>playlist_generate</code> with <code>flag</code> not checking value</li>
+<li class=""><code>catalog_file</code> catch exception on add_file error</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-668000">Fixed (668000)<a href="#fixed-668000" class="hash-link" aria-label="Direct link to Fixed (668000)" title="Direct link to Fixed (668000)" translate="no">​</a></h3>
+<ul>
+<li class="">ALL<!-- -->
+<ul>
+<li class="">Democratic methods vote array not correct in all cases</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-667">API 6.6.7<a href="#api-667" class="hash-link" aria-label="Direct link to API 6.6.7" title="Direct link to API 6.6.7" translate="no">​</a></h2>
+<p>This version is being released for Ampache7 <strong>only</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added-667000">Added (667000)<a href="#added-667000" class="hash-link" aria-label="Direct link to Added (667000)" title="Direct link to Added (667000)" translate="no">​</a></h3>
+<ul>
+<li class="">API6<!-- -->
+<ul>
+<li class="">get_external_metadata: Get metadata from external plugins. (Useful for scripting)</li>
+<li class="">Add <code>is_hidden</code> status and <code>merge</code> genres into genre data objects</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="changed-667000">Changed (667000)<a href="#changed-667000" class="hash-link" aria-label="Direct link to Changed (667000)" title="Direct link to Changed (667000)" translate="no">​</a></h3>
+<ul>
+<li class="">ALL<!-- -->
+<ul>
+<li class="">stats: Allow <code>limit</code> -1 for no limit. (0 falls back to <code>popular_threshold</code> value)</li>
+</ul>
+</li>
+<li class="">API6<!-- -->
+<ul>
+<li class="">user_preference<!-- -->
+<ul>
+<li class="">Add <code>has_access</code> to show whether you can change the preference</li>
+<li class="">Add <code>values</code> to the response for all <code>special</code> preferences</li>
+</ul>
+</li>
+<li class="">user_preferences<!-- -->
+<ul>
+<li class="">Add <code>has_access</code> to show whether you can change the preference</li>
+<li class="">Add <code>values</code> to the response for all <code>special</code> preferences</li>
+</ul>
+</li>
+<li class="">system_preference<!-- -->
+<ul>
+<li class="">Add <code>has_access</code> to show whether you can change the preference</li>
+<li class="">Add <code>values</code> to the response for all <code>special</code> preferences</li>
+</ul>
+</li>
+<li class="">system_preferences<!-- -->
+<ul>
+<li class="">Add <code>has_access</code> to show whether you can change the preference</li>
+<li class="">Add <code>values</code> to the response for all <code>special</code> preferences</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-667000">Fixed (667000)<a href="#fixed-667000" class="hash-link" aria-label="Direct link to Fixed (667000)" title="Direct link to Fixed (667000)" translate="no">​</a></h3>
+<ul>
+<li class="">XML<!-- -->
+<ul>
+<li class="">Index keyed_array data on int indexed arrays</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-666">API 6.6.6<a href="#api-666" class="hash-link" aria-label="Direct link to API 6.6.6" title="Direct link to API 6.6.6" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-666000">Fixed (666000)<a href="#fixed-666000" class="hash-link" aria-label="Direct link to Fixed (666000)" title="Direct link to Fixed (666000)" translate="no">​</a></h3>
+<ul>
+<li class="">ALL<!-- -->
+<ul>
+<li class="">Not checking auth on User lookup</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-665">API 6.6.5<a href="#api-665" class="hash-link" aria-label="Direct link to API 6.6.5" title="Direct link to API 6.6.5" translate="no">​</a></h2>
+<p>Merge update from Ampache7.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added-665000">Added (665000)<a href="#added-665000" class="hash-link" aria-label="Direct link to Added (665000)" title="Direct link to Added (665000)" translate="no">​</a></h3>
+<ul>
+<li class="">Search<!-- -->
+<ul>
+<li class="">Add <code>disk_count</code> to Album &amp; AlbumDisk search types</li>
+<li class="">Add <code>no_license</code> to Song search</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-665000">Fixed (665000)<a href="#fixed-665000" class="hash-link" aria-label="Direct link to Fixed (665000)" title="Direct link to Fixed (665000)" translate="no">​</a></h3>
+<ul>
+<li class="">API6<!-- -->
+<ul>
+<li class="">handshake: Downgrade version 7 calls to 6</li>
+<li class="">get_indexes: Respect &#x27;api_hidden_playlists&#x27;</li>
+<li class="">index: Respect &#x27;api_hidden_playlists&#x27;</li>
+<li class="">list: Respect &#x27;api_hidden_playlists&#x27;</li>
+<li class="">playlists: Respect &#x27;api_hidden_playlists&#x27;</li>
+</ul>
+</li>
+<li class="">API5<!-- -->
+<ul>
+<li class="">get_indexes: Respect &#x27;api_hidden_playlists&#x27;</li>
+<li class="">playlists: Respect &#x27;api_hidden_playlists&#x27;</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-664">API 6.6.4<a href="#api-664" class="hash-link" aria-label="Direct link to API 6.6.4" title="Direct link to API 6.6.4" translate="no">​</a></h2>
+<p>Merge update from Ampache7.</p>
+<p>This update has counting updates to allow faster responses on larger results</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added-664000">Added (664000)<a href="#added-664000" class="hash-link" aria-label="Direct link to Added (664000)" title="Direct link to Added (664000)" translate="no">​</a></h3>
+<ul>
+<li class="">API6<!-- -->
+<ul>
+<li class="">Use set_count function on data classes to speed up counting response totals</li>
+<li class="">Validate <code>website</code> for <code>user_edit</code></li>
+<li class="">Use split search for search methods<!-- -->
+<ul>
+<li class="">advanced_search / search</li>
+<li class="">search_songs</li>
+<li class="">user_update</li>
+<li class="">playlist_generate</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="">API5<!-- -->
+<ul>
+<li class="">Use split search for search methods<!-- -->
+<ul>
+<li class="">advanced_search</li>
+<li class="">search_songs</li>
+<li class="">user_update</li>
+<li class="">playlist_generate</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="">API4<!-- -->
+<ul>
+<li class="">Use split search for search methods<!-- -->
+<ul>
+<li class="">advanced_search</li>
+<li class="">search_songs</li>
+<li class="">user_update</li>
+<li class="">playlist_generate</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="">API3<!-- -->
+<ul>
+<li class="">Use split search for search methods<!-- -->
+<ul>
+<li class="">advanced_search</li>
+<li class="">search_songs</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="changed-664000">Changed (664000)<a href="#changed-664000" class="hash-link" aria-label="Direct link to Changed (664000)" title="Direct link to Changed (664000)" translate="no">​</a></h3>
+<ul>
+<li class="">Rename API-CHANGELOG.md =&gt; CHANGELOG-API.md</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-663">API 6.6.3<a href="#api-663" class="hash-link" aria-label="Direct link to API 6.6.3" title="Direct link to API 6.6.3" translate="no">​</a></h2>
+<p><strong>NOTE</strong> NO CHANGE</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-662">API 6.6.2<a href="#api-662" class="hash-link" aria-label="Direct link to API 6.6.2" title="Direct link to API 6.6.2" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added-662000">Added (662000)<a href="#added-662000" class="hash-link" aria-label="Direct link to Added (662000)" title="Direct link to Added (662000)" translate="no">​</a></h3>
+<ul>
+<li class="">API6<!-- -->
+<ul>
+<li class="">Add <code>stats</code> parameter to stream and download methods (If false disable stat recording when playing the object)</li>
+<li class="">Respect <code>api_always_download</code> in stream and download methods</li>
+<li class="">Add sorting to stats calls</li>
+<li class="">add <code>user</code> object to playlist responses (owner of the playlist)</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-662000">Fixed (662000)<a href="#fixed-662000" class="hash-link" aria-label="Direct link to Fixed (662000)" title="Direct link to Fixed (662000)" translate="no">​</a></h3>
+<ul>
+<li class="">ALL<!-- -->
+<ul>
+<li class="">index: Artist index not showing albums</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-661">API 6.6.1<a href="#api-661" class="hash-link" aria-label="Direct link to API 6.6.1" title="Direct link to API 6.6.1" translate="no">​</a></h2>
+<p>This release keeps parity between Ampache7 releases by backporting the updated code.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added-661000">Added (661000)<a href="#added-661000" class="hash-link" aria-label="Direct link to Added (661000)" title="Direct link to Added (661000)" translate="no">​</a></h3>
+<ul>
+<li class="">API6<!-- -->
+<ul>
+<li class="">Add maximum ID properties to <code>handshake</code> and <code>ping</code> (with auth) responses for media types<!-- -->
+<ul>
+<li class=""><code>max_song</code>, <code>max_album</code>, <code>max_artist</code>, <code>max_video</code>, <code>max_podcast</code>, <code>max_podcast_episode</code></li>
+</ul>
+</li>
+<li class="">flag: add <code>date</code> as a parameter (set the time for your flag)</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="changed-661000">Changed (661000)<a href="#changed-661000" class="hash-link" aria-label="Direct link to Changed (661000)" title="Direct link to Changed (661000)" translate="no">​</a></h3>
+<ul>
+<li class="">lost_password: deny access in simple_user_mode</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-660">API 6.6.0<a href="#api-660" class="hash-link" aria-label="Direct link to API 6.6.0" title="Direct link to API 6.6.0" translate="no">​</a></h2>
+<p>Like with <code>total_count</code>, we&#x27;ve added an md5sum of the results (called <code>md5</code>) in responses</p>
+<p>This is useful for recording whether you need to update or change results.</p>
+<p>Inconsistency with the return of object arrays and single items have been fixed and docs updated.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added-660000">Added (660000)<a href="#added-660000" class="hash-link" aria-label="Direct link to Added (660000)" title="Direct link to Added (660000)" translate="no">​</a></h3>
+<ul>
+<li class="">ALL<!-- -->
+<ul>
+<li class="">Track user IP on handshake and ping calls</li>
+<li class="">playlist_edit: separate error when the playlist doesn&#x27;t exist</li>
+</ul>
+</li>
+<li class="">API6<!-- -->
+<ul>
+<li class="">New Method: playlist_hash (Get the MD5 hash of the playlist without getting the whole object)</li>
+<li class="">Add <code>md5</code> to responses. (Hash objects in the response before slicing and limiting)</li>
+<li class="">Add <code>md5</code> property to playlist objects. (Hash of song objects in the response)</li>
+<li class="">Add <code>username</code> property to handshake and ping (with auth) responses to workaround missing usernames in token auth</li>
+<li class="">Add <code>has_access</code> property to playlist objects. (Can edit the playlist if true)</li>
+<li class="">Add <code>has_collaborate</code> property to playlist objects. (Can add and remove songs to the playlist if true)</li>
+<li class="">Add <code>last_update</code> property to playlist objects. (Time a playlist changed. Smartplaylists do not change based on returned songs)</li>
+<li class="">Add <code>object_type</code> and <code>object_id</code> property to shout objects</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="changed-660000">Changed (660000)<a href="#changed-660000" class="hash-link" aria-label="Direct link to Changed (660000)" title="Direct link to Changed (660000)" translate="no">​</a></h3>
+<ul>
+<li class="">API6<!-- -->
+<ul>
+<li class="">playlist_edit: Add songs if you&#x27;re a collaborator and ignore edit parameters if you fail has_access check</li>
+<li class="">catalog_add: Do not return an object. (We return a single item)</li>
+<li class="">bookmark_create: Do not return an object. (We return a single item)</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-660000">Fixed (660000)<a href="#fixed-660000" class="hash-link" aria-label="Direct link to Fixed (660000)" title="Direct link to Fixed (660000)" translate="no">​</a></h3>
+<ul>
+<li class="">ALL<!-- -->
+<ul>
+<li class="">User preferences were not initiated and the server preferences would overwrite differences</li>
+<li class="">Api::set_user_id function sending an int instead of a user</li>
+<li class="">Some responses that include users not checking the user is valid</li>
+</ul>
+</li>
+<li class="">API6<!-- -->
+<ul>
+<li class="">JSON: Send empty array for missing single item methods</li>
+<li class="">lost_password: function name incorrect</li>
+<li class="">flag: id smartplaylists correctly</li>
+<li class="">rate: id smartplaylists correctly</li>
+<li class="">albums: Browse user may not be set</li>
+<li class="">podcast_episodes: Browse user may not be set</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-650">API 6.5.0<a href="#api-650" class="hash-link" aria-label="Direct link to API 6.5.0" title="Direct link to API 6.5.0" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added-650000">Added (650000)<a href="#added-650000" class="hash-link" aria-label="Direct link to Added (650000)" title="Direct link to Added (650000)" translate="no">​</a></h3>
+<ul>
+<li class="">API6<!-- -->
+<ul>
+<li class="">Add <code>songartists</code> to all album data responses. (In an album <code>artists</code>=album_artists, <code>songartists</code>=song_artists)</li>
+<li class="">artist_albums: add <code>album_artist</code> as an optional parameter</li>
+<li class="">get_indexes: add <code>catalog</code>, <code>album_artist</code> and <code>song_artist</code> as possible <code>type</code> values</li>
+<li class="">list: add <code>catalog</code> and <code>song_artist</code> as possible <code>type</code> values</li>
+<li class="">Add <code>cond</code> and <code>sort</code> parameters to browse methods<!-- -->
+<ul>
+<li class="">album_songs</li>
+<li class="">albums</li>
+<li class="">artist_albums</li>
+<li class="">artist_songs</li>
+<li class="">artists</li>
+<li class="">browse</li>
+<li class="">catalogs</li>
+<li class="">followers</li>
+<li class="">genre_albums</li>
+<li class="">genre_artists</li>
+<li class="">genre_songs</li>
+<li class="">genres</li>
+<li class="">get_indexes</li>
+<li class="">index</li>
+<li class="">label_artists</li>
+<li class="">labels</li>
+<li class="">license_songs</li>
+<li class="">licenses</li>
+<li class="">list</li>
+<li class="">live_streams</li>
+<li class="">playlists</li>
+<li class="">podcasts</li>
+<li class="">podcast_episodes</li>
+<li class="">shares</li>
+<li class="">songs</li>
+<li class="">user_playlists</li>
+<li class="">user_smartlists</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="changed-650000">Changed (650000)<a href="#changed-650000" class="hash-link" aria-label="Direct link to Changed (650000)" title="Direct link to Changed (650000)" translate="no">​</a></h3>
+<ul>
+<li class="">Reset any existing browse when calling Api::getBrowse()</li>
+<li class="">Filter duplicate search names outside of the data classes and filter on browses</li>
+<li class="">API6 methods converted to Browse<!-- -->
+<ul>
+<li class="">artist_albums</li>
+<li class="">artist_songs</li>
+<li class="">browse (<code>catalog</code> types)</li>
+<li class="">catalogs</li>
+<li class="">followers</li>
+<li class="">genre_albums</li>
+<li class="">genre_artists</li>
+<li class="">genre_songs</li>
+<li class="">get_indexes (<code>catalog</code> and <code>playlist</code> types)</li>
+<li class="">index (<code>catalog</code> and <code>playlist</code> types)</li>
+<li class="">label_artists</li>
+<li class="">license_songs</li>
+<li class="">list (<code>playlist</code> types)</li>
+<li class="">playlists</li>
+<li class="">podcast_episodes</li>
+<li class="">stats (random <code>playlist</code> types)</li>
+<li class="">user_playlists</li>
+<li class="">user_smartlists</li>
+</ul>
+</li>
+<li class="">API5 methods converted to Browse<!-- -->
+<ul>
+<li class="">get_indexes (<code>playlist</code> types)</li>
+<li class="">playlists</li>
+<li class="">stats (random <code>playlist</code> types)</li>
+</ul>
+</li>
+<li class="">API4 methods converted to Browse<!-- -->
+<ul>
+<li class="">get_indexes (<code>playlist</code> types)</li>
+<li class="">playlists</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-650000">Fixed (650000)<a href="#fixed-650000" class="hash-link" aria-label="Direct link to Fixed (650000)" title="Direct link to Fixed (650000)" translate="no">​</a></h3>
+<ul>
+<li class="">ALL<!-- -->
+<ul>
+<li class="">html_entity_decode <code>include</code>, <code>items</code> and <code>tracks</code> parameter for applicable methods</li>
+<li class="">Rating and flag data for smartlists was using incorrect id</li>
+<li class="">playlist_edit: track insert broken by removing table constraint</li>
+<li class="">playlist_edit: workaround sending owner username instead of ID</li>
+<li class="">playlist_add_song: When using <code>unique_playlist</code> don&#x27;t grab the whole playlist</li>
+</ul>
+</li>
+<li class="">API6<!-- -->
+<ul>
+<li class="">list: sorting was by <code>id</code> instead of <code>name</code></li>
+<li class="">browse: sorting was by <code>id</code> instead of <code>name</code></li>
+<li class="">download: The API can use searches as playlists so check for the <code>smart_</code> prefix</li>
+<li class="">stream: The API can use searches as playlists so check for the <code>smart_</code> prefix</li>
+<li class="">Respect album sort preferences in all album object responses</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-640">API 6.4.0<a href="#api-640" class="hash-link" aria-label="Direct link to API 6.4.0" title="Direct link to API 6.4.0" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added-640000">Added (640000)<a href="#added-640000" class="hash-link" aria-label="Direct link to Added (640000)" title="Direct link to Added (640000)" translate="no">​</a></h3>
+<ul>
+<li class="">API6<!-- -->
+<ul>
+<li class="">Downgrade any API7 calls to API6 <a class="" href="/zh-Hans/docs/help/troubleshooting/ampache7-for-admins#there-is-no-api7-only-api6-and-5-4-and-3-too">wiki</a></li>
+<li class="">New Method: player (Inform the server about the state of your client player)<!-- -->
+<ul>
+<li class="">Returns <code>now_playing</code> state on completion</li>
+</ul>
+</li>
+<li class="">download: add <code>bitrate</code> parameter</li>
+<li class="">playlists: add <code>include</code> parameter (<strong>note</strong> this can be massive and slow when searches are included)</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="changed-640000">Changed (640000)<a href="#changed-640000" class="hash-link" aria-label="Direct link to Changed (640000)" title="Direct link to Changed (640000)" translate="no">​</a></h3>
+<ul>
+<li class="">API6<!-- -->
+<ul>
+<li class="">Do not translate API <code>errorMessage</code> strings ampache.org (<code>https://ampache.org/api/api-errors</code>)</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-640000">Fixed (640000)<a href="#fixed-640000" class="hash-link" aria-label="Direct link to Fixed (640000)" title="Direct link to Fixed (640000)" translate="no">​</a></h3>
+<ul>
+<li class="">ALL<!-- -->
+<ul>
+<li class="">Download method format parameter didn&#x27;t have a fallback value</li>
+</ul>
+</li>
+<li class="">API4<!-- -->
+<ul>
+<li class="">playlist: error check for missing/deleted playlists</li>
+<li class="">playlist_songs: error check for missing/deleted playlists</li>
+</ul>
+</li>
+<li class="">API6<!-- -->
+<ul>
+<li class="">Playlists objects would not return duplicates items if allowed</li>
+<li class="">has_art property missing from songs and albums</li>
+<li class="">playlist_add: couldn&#x27;t add a single item</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-631">API 6.3.1<a href="#api-631" class="hash-link" aria-label="Direct link to API 6.3.1" title="Direct link to API 6.3.1" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added-631000">Added (631000)<a href="#added-631000" class="hash-link" aria-label="Direct link to Added (631000)" title="Direct link to Added (631000)" translate="no">​</a></h3>
+<ul>
+<li class="">API6<!-- -->
+<ul>
+<li class="">New Method: now_playing (Get what is currently being played by all users.)</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-630">API 6.3.0<a href="#api-630" class="hash-link" aria-label="Direct link to API 6.3.0" title="Direct link to API 6.3.0" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added-630000">Added (630000)<a href="#added-630000" class="hash-link" aria-label="Direct link to Added (630000)" title="Direct link to Added (630000)" translate="no">​</a></h3>
+<ul>
+<li class="">API6<!-- -->
+<ul>
+<li class="">New Method: search_group (return multiple object types from a single set of search rules)</li>
+<li class="">New Method: search (alias for advanced_search)</li>
+<li class="">New Method: user_playlists (return user playlists and does not include smartlists)</li>
+<li class="">New Method: user_smartlists (return user smartlists (searches) and does not include playlists)</li>
+<li class="">New Method: playlist_add (add songs to a playlist, allowing different song parent types)</li>
+<li class="">New Method: index (replaces get_indexes with a simpler list of id&#x27;s. children can be included)</li>
+<li class="">Add <code>has_art</code> parameter to any object with an <code>art</code> url</li>
+<li class="">Add avatar url to user objects</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="changed-630000">Changed (630000)<a href="#changed-630000" class="hash-link" aria-label="Direct link to Changed (630000)" title="Direct link to Changed (630000)" translate="no">​</a></h3>
+<ul>
+<li class="">API6<!-- -->
+<ul>
+<li class="">playlist_add_song: depreciated and will be removed in <strong>API7</strong> (Use playlist_add)</li>
+<li class="">share_create: add more valid types (&#x27;playlist&#x27;, &#x27;podcast&#x27;, &#x27;podcast_episode&#x27;, &#x27;video&#x27;)</li>
+<li class="">user: make username optional</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-630000">Fixed (630000)<a href="#fixed-630000" class="hash-link" aria-label="Direct link to Fixed (630000)" title="Direct link to Fixed (630000)" translate="no">​</a></h3>
+<ul>
+<li class="">ALL<!-- -->
+<ul>
+<li class="">Userflag wasn&#x27;t sending bool when cached in the database</li>
+<li class="">Admin would always get everyones playlists when filtering</li>
+<li class="">Stream methods would not send the bitrate correctly</li>
+</ul>
+</li>
+<li class="">API4<!-- -->
+<ul>
+<li class="">playlists method not respecting like for smartlists</li>
+</ul>
+</li>
+<li class="">API5<!-- -->
+<ul>
+<li class="">playlists method not respecting like for smartlists</li>
+</ul>
+</li>
+<li class="">API6<!-- -->
+<ul>
+<li class="">playlists method not respecting like for smartlists</li>
+<li class="">playlist_edit method will decode html <code>,</code> separators</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-621">API 6.2.1<a href="#api-621" class="hash-link" aria-label="Direct link to API 6.2.1" title="Direct link to API 6.2.1" translate="no">​</a></h2>
+<p><strong>NOTE</strong> NO CHANGE</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-620">API 6.2.0<a href="#api-620" class="hash-link" aria-label="Direct link to API 6.2.0" title="Direct link to API 6.2.0" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added-620000">Added (620000)<a href="#added-620000" class="hash-link" aria-label="Direct link to Added (620000)" title="Direct link to Added (620000)" translate="no">​</a></h3>
+<ul>
+<li class="">API: Allow non-expiring user sessions when using a header token</li>
+<li class="">Allow endless api sessions. (You should start using http header auth to hide these)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="changed-620000">Changed (620000)<a href="#changed-620000" class="hash-link" aria-label="Direct link to Changed (620000)" title="Direct link to Changed (620000)" translate="no">​</a></h3>
+<ul>
+<li class="">Set default API version to 6 (was 5)</li>
+<li class="">Allow raising and lowering response version on ping to <strong>any</strong> version</li>
+<li class="">API6<!-- -->
+<ul>
+<li class="">Return error on handshake version failure</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-620000">Fixed (620000)<a href="#fixed-620000" class="hash-link" aria-label="Direct link to Fixed (620000)" title="Direct link to Fixed (620000)" translate="no">​</a></h3>
+<ul>
+<li class="">ALL<!-- -->
+<ul>
+<li class="">UrlToSong couldn&#x27;t handle encoded urls</li>
+</ul>
+</li>
+<li class="">API3<!-- -->
+<ul>
+<li class="">Video data would get an incorrect stream url</li>
+</ul>
+</li>
+<li class="">API5<!-- -->
+<ul>
+<li class="">bookmark_create: type is mandatory</li>
+</ul>
+</li>
+<li class="">API6<!-- -->
+<ul>
+<li class="">bookmark_create: type is mandatory</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-610">API 6.1.0<a href="#api-610" class="hash-link" aria-label="Direct link to API 6.1.0" title="Direct link to API 6.1.0" translate="no">​</a></h2>
+<p>Two new methods have been added</p>
+<p>The bookmark methods have had a bit of a rework as they were not very useful</p>
+<p>Finally the issues with setting your auth token in the http header have been fixed</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added-610000">Added (610000)<a href="#added-610000" class="hash-link" aria-label="Direct link to Added (610000)" title="Direct link to Added (610000)" translate="no">​</a></h3>
+<ul>
+<li class="">API6<!-- -->
+<ul>
+<li class="">New Method: bookmark (Get single bookmark by bookmark_id)</li>
+<li class="">New Method: lost_password (Allows a non-admin user to reset their password)</li>
+<li class="">bookmark_create: Add <code>include</code> parameter (if true include the object in the bookmark)</li>
+<li class="">bookmark_edit: Add <code>include</code> parameter (if true include the object in the bookmark)</li>
+<li class="">get_bookmark<!-- -->
+<ul>
+<li class="">Add <code>include</code> parameter (if true include the object in the bookmark)</li>
+<li class="">Add <code>all</code> parameter (if true include every bookmark for the object)</li>
+</ul>
+</li>
+<li class="">bookmarks<!-- -->
+<ul>
+<li class="">Add parameter <code>client</code> to filter by specific groups of bookmarks</li>
+<li class="">Add <code>include</code> parameter (if true include the object in the bookmark)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="changed-610000">Changed (610000)<a href="#changed-610000" class="hash-link" aria-label="Direct link to Changed (610000)" title="Direct link to Changed (610000)" translate="no">​</a></h3>
+<ul>
+<li class="">API5<!-- -->
+<ul>
+<li class="">bookmark_edit: show error on missing bookmark instead of empty object</li>
+<li class="">bookmark_delete: show error on missing bookmark instead of empty object</li>
+</ul>
+</li>
+<li class="">API6<!-- -->
+<ul>
+<li class="">get_bookmark<!-- -->
+<ul>
+<li class="">add bookmark as a valid <code>object_type</code></li>
+<li class="">Don&#x27;t return single JSON bookmarks as an object</li>
+</ul>
+</li>
+<li class="">bookmark_create: Remove <code>client</code> parameter default value (&#x27;AmpacheAPI&#x27;)</li>
+<li class="">bookmark_edit<!-- -->
+<ul>
+<li class="">Remove <code>client</code> parameter default value (&#x27;AmpacheAPI&#x27;)</li>
+<li class="">show error on missing bookmark instead of empty object</li>
+<li class="">add bookmark as a valid <code>object_type</code></li>
+<li class="">Don&#x27;t return single JSON bookmarks as an object</li>
+</ul>
+</li>
+<li class="">bookmark_delete<!-- -->
+<ul>
+<li class="">Remove <code>client</code> parameter default value (&#x27;AmpacheAPI&#x27;)</li>
+<li class="">show error on missing bookmark instead of empty object</li>
+<li class="">add bookmark as a valid <code>object_type</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-610000">Fixed (610000)<a href="#fixed-610000" class="hash-link" aria-label="Direct link to Fixed (610000)" title="Direct link to Fixed (610000)" translate="no">​</a></h3>
+<ul>
+<li class="">ALL<!-- -->
+<ul>
+<li class="">Some JSON methods with empty results would not show <code>total_count</code> in results</li>
+<li class="">handshake: auth failure with header token</li>
+<li class="">playlist_generate: Don&#x27;t error when optional <code>mode</code> and <code>format</code> are not set</li>
+<li class="">advanced_search: runtime error on empty data type</li>
+</ul>
+</li>
+<li class="">API4<!-- -->
+<ul>
+<li class="">Fix lots of Runtime Error&#x27;s on missing optional data</li>
+</ul>
+</li>
+<li class="">API5<!-- -->
+<ul>
+<li class="">Fix lots of Runtime Error&#x27;s on missing optional data</li>
+<li class="">video: error type was song instead of filter</li>
+<li class="">genre_artists, genre_albums, genre_songs: Parameter <code>filter</code> runtime errors</li>
+<li class="">download: random search/playlist didn&#x27;t use the <code>id</code> parameter</li>
+<li class="">stream: random search/playlist didn&#x27;t use the <code>id</code> parameter</li>
+<li class="">bookmark_edit<!-- -->
+<ul>
+<li class="">Missing user id in data array</li>
+<li class="">Not able to edit all bookmarks</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="">API6<!-- -->
+<ul>
+<li class="">Fix lots of Runtime Error&#x27;s on missing optional data</li>
+<li class="">video: error type was song instead of filter</li>
+<li class="">catalog_folder didn&#x27;t get the group of items correctly</li>
+<li class="">genre_artists, genre_albums, genre_songs: Parameter <code>filter</code> runtime errors</li>
+<li class="">download: random search/playlist didn&#x27;t use the <code>id</code> parameter</li>
+<li class="">stream: random search/playlist didn&#x27;t use the <code>id</code> parameter</li>
+<li class="">bookmark_edit<!-- -->
+<ul>
+<li class="">Missing user id in data array</li>
+<li class="">Not able to edit all bookmarks</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-603">API 6.0.3<a href="#api-603" class="hash-link" aria-label="Direct link to API 6.0.3" title="Direct link to API 6.0.3" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added-603000">Added (603000)<a href="#added-603000" class="hash-link" aria-label="Direct link to Added (603000)" title="Direct link to Added (603000)" translate="no">​</a></h3>
+<ul>
+<li class="">API5::playlist_songs: Add <code>random</code> to get random objects filtered by limit</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-603000">Fixed (603000)<a href="#fixed-603000" class="hash-link" aria-label="Direct link to Fixed (603000)" title="Direct link to Fixed (603000)" translate="no">​</a></h3>
+<ul>
+<li class="">ALL<!-- -->
+<ul>
+<li class="">Fixed Bearer token auth on all methods</li>
+<li class="">handshake: runtime errors with bad username</li>
+<li class="">handshake: Don&#x27;t error on empty data counts</li>
+<li class="">ping: Don&#x27;t error on empty data counts</li>
+</ul>
+</li>
+<li class="">Api6<!-- -->
+<ul>
+<li class="">list: searches were missing from playlists</li>
+<li class="">browse: XML returned a list instead of a browse object</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-602">API 6.0.2<a href="#api-602" class="hash-link" aria-label="Direct link to API 6.0.2" title="Direct link to API 6.0.2" translate="no">​</a></h2>
+<p><strong>NOTE</strong> NO CHANGE</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-601">API 6.0.1<a href="#api-601" class="hash-link" aria-label="Direct link to API 6.0.1" title="Direct link to API 6.0.1" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="changed-601000">Changed (601000)<a href="#changed-601000" class="hash-link" aria-label="Direct link to Changed (601000)" title="Direct link to Changed (601000)" translate="no">​</a></h3>
+<ul>
+<li class="">API6 XML<!-- -->
+<ul>
+<li class="">get_similar: return song objects to match json</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-601000">Fixed (601000)<a href="#fixed-601000" class="hash-link" aria-label="Direct link to Fixed (601000)" title="Direct link to Fixed (601000)" translate="no">​</a></h3>
+<ul>
+<li class="">API6<!-- -->
+<ul>
+<li class="">user_preference: returned array instead of object</li>
+<li class="">system_preference: returned array instead of object</li>
+<li class="">preference_create: returned array instead of object</li>
+<li class="">preference_edit: returned array instead of object</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-600">API 6.0.0<a href="#api-600" class="hash-link" aria-label="Direct link to API 6.0.0" title="Direct link to API 6.0.0" translate="no">​</a></h2>
+<p>Stream token&#x27;s will let you design permalinked streams and allow users to stream without re authenticating to the server. <a class="" href="/zh-Hans/docs/old-information/ampache6-details#allow-permalink-user-streams">wiki</a></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added-600000">Added (600000)<a href="#added-600000" class="hash-link" aria-label="Direct link to Added (600000)" title="Direct link to Added (600000)" translate="no">​</a></h3>
+<ul>
+<li class="">API5::playlist_songs: Add <code>random</code> to get random objects filtered by limit</li>
+<li class="">API6 (Based on API5)<!-- -->
+<ul>
+<li class="">Added podcast id and name to <code>podcast_episode</code> objects</li>
+<li class="">API6::browse: List server contents in a directory-style listing (Music, Podcast and Video catalogs)</li>
+<li class="">API6::list: Replace get_indexes with a faster lookup and similar parameters returning <code>id</code>, <code>name</code>, <code>prefix</code> and <code>basename</code></li>
+<li class="">API6::catalog_add: Create a catalog (Require: 75)</li>
+<li class="">API6::catalog_delete: Delete a catalog (Require: 75)</li>
+<li class="">API6::catalog_folder: Perform actions on local catalog folders. (catalog_file but for folders) (Require: 50)</li>
+<li class="">API6::live_stream_create: Create a new live stream (radio station)</li>
+<li class="">API6::live_stream_edit: Edit a live stream</li>
+<li class="">API6::live_stream_delete: Delete a stream by ID</li>
+<li class="">API6::register: Allow users to register an account (if enabled)</li>
+<li class="">API6::playlist_create: Return an error if the playlist name already exists for that user</li>
+<li class="">API6::playlist_songs: Add <code>random</code> to get random objects filtered by limit</li>
+<li class="">API6::user_edit (previously user_create):<!-- -->
+<ul>
+<li class="">Add <code>group</code> parameter to pick a catalog filter group</li>
+<li class="">Add <code>fullname_public</code> to enable/disable using fullname in public display</li>
+<li class="">Add <code>reset_apikey</code> to reset a user Api Key</li>
+<li class="">Add <code>reset_streamtoken</code> to reset a user Stream Token</li>
+<li class="">Add <code>clear_stats</code> reset all stats for this user <strong>be very sure about this one!</strong></li>
+</ul>
+</li>
+<li class="">Add <code>prefix</code> (Prefix for Full Name) to album &amp; artist responses</li>
+<li class="">Add <code>basename</code> (Name without prefix) to album &amp; artist responses</li>
+<li class="">Add <code>bitrate</code> to Democratic objects</li>
+<li class="">Add <code>format</code> to Song and Democratic objects</li>
+<li class="">Add <code>stream_format</code>, <code>stream_bitrate</code>, <code>stream_mime</code> to Song objects (This is the transcoded output for a stream)</li>
+<li class="">Add all mapped artists to song and album objects (JSON added an <code>artists</code> element)</li>
+<li class="">Add <code>bitrate</code>, <code>stream_bitrate</code>, <code>rate</code>, <code>mode</code>, <code>channels</code> to Podcast Episode objects</li>
+</ul>
+</li>
+<li class="">JSON responses<!-- -->
+<ul>
+<li class="">Cast bool fields to <code>true</code> and <code>false</code> instead of &quot;1&quot; &amp; &quot;0&quot;</li>
+<li class="">Add <code>total_count</code> to responses to give clients an idea of the total possible objects</li>
+</ul>
+</li>
+<li class="">advanced_search<!-- -->
+<ul>
+<li class="">Add <code>song_genre</code> to album and artist searches</li>
+<li class="">Add <code>possible_duplicate_album</code> to song search</li>
+<li class="">Add <code>mbid_artist</code> to album search</li>
+<li class="">Add <code>barcode</code> to album search</li>
+<li class="">Add <code>catalog_number</code> to album search</li>
+<li class="">Add <code>smartplaylist</code> to album search</li>
+<li class="">Add <code>duplicate_tracks</code> to album and song search (MIN &amp; MAX id for song search)</li>
+<li class="">Alias <code>possible_duplicate_album</code> =&gt; <code>possible_duplicate</code> for album search</li>
+<li class="">Alias <code>album_genre</code> =&gt; <code>genre</code> for album search</li>
+<li class="">Alias <code>mbid_album</code> =&gt; <code>mbid</code> for album search</li>
+<li class="">Alias <code>mbid_artist</code> =&gt; <code>mbid</code> for artist search</li>
+<li class="">Alias <code>song_genre</code> =&gt; <code>genre</code> for song search</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="changed-600000">Changed (600000)<a href="#changed-600000" class="hash-link" aria-label="Direct link to Changed (600000)" title="Direct link to Changed (600000)" translate="no">​</a></h3>
+<ul>
+<li class="">Api6<!-- -->
+<ul>
+<li class="">Renamed <code>user_update</code> to <code>user_edit</code> (user_update still works and will be removed in <strong>API7</strong>)</li>
+</ul>
+</li>
+<li class="">Api5<!-- -->
+<ul>
+<li class="">Add backwards compatible <code>user_edit</code> method to point to <code>user_update</code></li>
+</ul>
+</li>
+<li class="">ALL<!-- -->
+<ul>
+<li class="">Add all possible plugin preferences to the system list so they can&#x27;t be deleted</li>
+<li class="">Albums with no album_artist may now return 0 artist called &#x27;Various&#x27;</li>
+<li class="">Don&#x27;t send AlbumDisk objects to the API</li>
+<li class="">Send the authenticated user to all method calls</li>
+</ul>
+</li>
+<li class="">XML responses<!-- -->
+<ul>
+<li class="">Api6 XML success and error response messages are put in a <code>message</code> element (like json)</li>
+<li class="">For data responses id is the only attribute and everything else is an element</li>
+<li class="">Name was not set as an attribute OR an element so now it&#x27;s always an element</li>
+<li class="">Return original XML output (that may be malformed) when loadxml fails.</li>
+</ul>
+</li>
+<li class="">Api6::get_indexes: This method is depreciated and will be removed in Ampache <strong>API7</strong> (Use list instead)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="removed-600000">Removed (600000)<a href="#removed-600000" class="hash-link" aria-label="Direct link to Removed (600000)" title="Direct link to Removed (600000)" translate="no">​</a></h3>
+<ul>
+<li class="">Api6<!-- -->
+<ul>
+<li class=""><code>preciserating</code> removed from all objects (use rating)</li>
+<li class="">Remove non-song MBIDs as not relevant to the object</li>
+<li class="">album_songs remove <code>exact</code> as a parameter</li>
+<li class="">stream remove <code>podcast</code> as a valid <code>type</code> value</li>
+</ul>
+</li>
+<li class="">preference_create: don&#x27;t allow creating &#x27;system&#x27; preferences</li>
+<li class="">Warning of depreciated methods from API5 have been removed from API6<!-- -->
+<ul>
+<li class="">Api6::tag</li>
+<li class="">Api6::tags</li>
+<li class="">Api6::tag_albums</li>
+<li class="">Api6::tag_artists</li>
+<li class="">Api6::tag_songs</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-600000">Fixed (600000)<a href="#fixed-600000" class="hash-link" aria-label="Direct link to Fixed (600000)" title="Direct link to Fixed (600000)" translate="no">​</a></h3>
+<ul>
+<li class="">ALL<!-- -->
+<ul>
+<li class="">advanced_search methods were breaking with various offset and limits</li>
+</ul>
+</li>
+<li class="">API4<!-- -->
+<ul>
+<li class="">share_create: null <code>expires</code> fall back to <code>share_expire</code> or 7 days</li>
+</ul>
+</li>
+<li class="">API5<!-- -->
+<ul>
+<li class="">share_create: null <code>expires</code> fall back to <code>share_expire</code> or 7 days</li>
+<li class="">preference_edit: Could apply to the wrong user</li>
+</ul>
+</li>
+<li class="">Api6 JSON<!-- -->
+<ul>
+<li class="">Share and Bookmark object id&#x27;s were not strings</li>
+</ul>
+</li>
+<li class="">Api3<!-- -->
+<ul>
+<li class="">Never send 0 ratings. They should always be null (e.g. <code>&lt;rating/&gt;</code>)</li>
+<li class="">Artists method parameters were incorrect</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-562">API 5.6.2<a href="#api-562" class="hash-link" aria-label="Direct link to API 5.6.2" title="Direct link to API 5.6.2" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-562000">Fixed (562000)<a href="#fixed-562000" class="hash-link" aria-label="Direct link to Fixed (562000)" title="Direct link to Fixed (562000)" translate="no">​</a></h3>
+<ul>
+<li class="">ALL<!-- -->
+<ul>
+<li class="">Require and set a valid version for <code>api_force_version</code></li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-561">API 5.6.1<a href="#api-561" class="hash-link" aria-label="Direct link to API 5.6.1" title="Direct link to API 5.6.1" translate="no">​</a></h2>
+<p><strong>NOTE</strong> NO CHANGE</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-560">API 5.6.0<a href="#api-560" class="hash-link" aria-label="Direct link to API 5.6.0" title="Direct link to API 5.6.0" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-560000">Fixed (560000)<a href="#fixed-560000" class="hash-link" aria-label="Direct link to Fixed (560000)" title="Direct link to Fixed (560000)" translate="no">​</a></h3>
+<ul>
+<li class="">ALL<!-- -->
+<ul>
+<li class="">share_create and share_edit methods broken when setting expiry days</li>
+<li class="">advanced_search methods were breaking with various offset and limits</li>
+<li class="">playlists methods parameter &#x27;exact&#x27; always ending up false</li>
+</ul>
+</li>
+<li class="">Api5<!-- -->
+<ul>
+<li class="">update_art hardcoded url to artist</li>
+<li class="">Typo in song bitrate xml</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-557">API 5.5.7<a href="#api-557" class="hash-link" aria-label="Direct link to API 5.5.7" title="Direct link to API 5.5.7" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="changed-557000">Changed (557000)<a href="#changed-557000" class="hash-link" aria-label="Direct link to Changed (557000)" title="Direct link to Changed (557000)" translate="no">​</a></h3>
+<ul>
+<li class="">Keep the original mime and bitrate on song objects instead of the transcoded value</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-556">API 5.5.6<a href="#api-556" class="hash-link" aria-label="Direct link to API 5.5.6" title="Direct link to API 5.5.6" translate="no">​</a></h2>
+<p>Fix various runtime errors and incorrect parameters for responses.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="changed-556000">Changed (556000)<a href="#changed-556000" class="hash-link" aria-label="Direct link to Changed (556000)" title="Direct link to Changed (556000)" translate="no">​</a></h3>
+<ul>
+<li class="">API browses all point to the Api class</li>
+<li class="">Use <code>FILTER_VALIDATE_IP</code> on ping calls</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-556000">Fixed (556000)<a href="#fixed-556000" class="hash-link" aria-label="Direct link to Fixed (556000)" title="Direct link to Fixed (556000)" translate="no">​</a></h3>
+<ul>
+<li class="">Api5<!-- -->
+<ul>
+<li class=""><code>songs</code> set_filter call without browse parameter may have lost info</li>
+<li class=""><code>get_indexes</code> set album_artist filter correctly</li>
+<li class=""><code>artists</code> set album_artist filter correctly</li>
+<li class=""><code>share_create</code> undefined filter check</li>
+</ul>
+</li>
+<li class="">Api4<!-- -->
+<ul>
+<li class=""><code>songs</code> set_filter call without browse parameter may have lost info</li>
+<li class=""><code>get_indexes</code> set album_artist filter correctly</li>
+<li class=""><code>timeline</code> incorrect JSON attribute <code>data</code> instead of <code>date</code></li>
+<li class=""><code>catalogs</code> JSON had incorrect data for <code>last_add</code> and missing <code>enabled</code></li>
+<li class=""><code>albums</code> return an empty response with a bad artist id</li>
+<li class=""><code>download</code> url parameter order matching &quot;client, action, cache&quot;</li>
+<li class=""><code>catalogs</code> undefined filter check</li>
+<li class=""><code>podcast</code> undefined filter check</li>
+<li class=""><code>podcast_edit</code> undefined filter check</li>
+<li class=""><code>podcasts</code> undefined filter check</li>
+<li class=""><code>share_create</code> undefined filter check</li>
+<li class=""><code>share_edit</code> undefined filter check</li>
+</ul>
+</li>
+<li class="">Api3<!-- -->
+<ul>
+<li class=""><code>album_songs</code> return an empty response with a bad album id</li>
+<li class=""><code>artist_albums</code> return an empty response with a bad artist id</li>
+<li class="">Calls to <code>songs</code> with user ID instead of user object</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-555">API 5.5.5<a href="#api-555" class="hash-link" aria-label="Direct link to API 5.5.5" title="Direct link to API 5.5.5" translate="no">​</a></h2>
+<p><strong>NOTE</strong> NO CHANGE</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-554">API 5.5.4<a href="#api-554" class="hash-link" aria-label="Direct link to API 5.5.4" title="Direct link to API 5.5.4" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-554000">Fixed (554000)<a href="#fixed-554000" class="hash-link" aria-label="Direct link to Fixed (554000)" title="Direct link to Fixed (554000)" translate="no">​</a></h3>
+<ul>
+<li class="">User count in Api::ping and Api::handshake was doubled</li>
+<li class="">Api3::stats method had incorrect recent parameters</li>
+<li class="">Ensure the output <code>bitrate</code> and <code>mime</code> are set for song objects</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-553">API 5.5.3<a href="#api-553" class="hash-link" aria-label="Direct link to API 5.5.3" title="Direct link to API 5.5.3" translate="no">​</a></h2>
+<p><strong>NOTE</strong> NO CHANGE</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-552">API 5.5.2<a href="#api-552" class="hash-link" aria-label="Direct link to API 5.5.2" title="Direct link to API 5.5.2" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added-552000">Added (552000)<a href="#added-552000" class="hash-link" aria-label="Direct link to Added (552000)" title="Direct link to Added (552000)" translate="no">​</a></h3>
+<ul>
+<li class="">advanced_search<!-- -->
+<ul>
+<li class="">Add <code>song_artist</code> as a search type (uses artist rules)</li>
+<li class="">Add <code>album_artist</code> as a search type (uses artist rules)</li>
+<li class="">Add <code>song_genre</code>, <code>mbid_artist</code>, <code>mbid_song</code> to album search</li>
+<li class="">Add <code>song_genre</code>, <code>mbid_album</code>, <code>mbid_song</code> to artist search</li>
+<li class="">Add <code>possible_duplicate_album</code> to song search</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-552000">Fixed (552000)<a href="#fixed-552000" class="hash-link" aria-label="Direct link to Fixed (552000)" title="Direct link to Fixed (552000)" translate="no">​</a></h3>
+<ul>
+<li class="">advanced_search<!-- -->
+<ul>
+<li class="">unable to retrieve song_artist or album_artist results</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-551">API 5.5.1<a href="#api-551" class="hash-link" aria-label="Direct link to API 5.5.1" title="Direct link to API 5.5.1" translate="no">​</a></h2>
+<p><strong>NOTE</strong> NO CHANGE</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-550">API 5.5.0<a href="#api-550" class="hash-link" aria-label="Direct link to API 5.5.0" title="Direct link to API 5.5.0" translate="no">​</a></h2>
+<p>This will likely be the last 5.x API release. API6 will be a continuation of API5 and not be a significant change like the 4-&gt;5 transition.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added-550000">Added (550000)<a href="#added-550000" class="hash-link" aria-label="Direct link to Added (550000)" title="Direct link to Added (550000)" translate="no">​</a></h3>
+<ul>
+<li class="">Api::stream add new types <code>playlist</code> and <code>search</code> (Streams a random object from these lists)</li>
+<li class="">Api::download add new types <code>playlist</code> and <code>search</code></li>
+<li class="">advanced_search<!-- -->
+<ul>
+<li class="">Add <code>podcast</code> as a search type<!-- -->
+<ul>
+<li class="">Add rule <code>title</code></li>
+<li class="">Add rule <code>podcast_episode</code> (Search by podcast episode name)</li>
+<li class="">Add rule <code>time</code> (Episode length in minutes)</li>
+<li class="">Add rule <code>state</code> (Completed, Pending Skipped)</li>
+<li class="">Add rule <code>file</code></li>
+<li class="">Add rule <code>added</code></li>
+<li class="">Add rule <code>pubdate</code> (Episode Publication Date)</li>
+</ul>
+</li>
+<li class="">Add <code>podcast_episode</code> as a search type<!-- -->
+<ul>
+<li class="">Add rule <code>title</code></li>
+<li class="">Add rule <code>podcast</code> (Search by podcast name)</li>
+<li class="">Add rule <code>time</code> (Length in minutes)</li>
+<li class="">Add rule <code>state</code> (Completed, Pending Skipped)</li>
+<li class="">Add rule <code>file</code></li>
+<li class="">Add rule <code>added</code></li>
+<li class="">Add rule <code>pubdate</code> (Publication Date)</li>
+</ul>
+</li>
+<li class="">Add <code>genre</code> as a search type<!-- -->
+<ul>
+<li class="">Add rule <code>title</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-550000">Fixed (550000)<a href="#fixed-550000" class="hash-link" aria-label="Direct link to Fixed (550000)" title="Direct link to Fixed (550000)" translate="no">​</a></h3>
+<ul>
+<li class="">API4::get_indexes podcast_episode was encoding into the API5 object</li>
+<li class="">API4::share_create was unable to share when using lowercase types</li>
+<li class="">advanced_search<!-- -->
+<ul>
+<li class="">Added missing <code>song</code> (was <code>song_title</code>) to album searches</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-541">API 5.4.1<a href="#api-541" class="hash-link" aria-label="Direct link to API 5.4.1" title="Direct link to API 5.4.1" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added-541000">Added (541000)<a href="#added-541000" class="hash-link" aria-label="Direct link to Added (541000)" title="Direct link to Added (541000)" translate="no">​</a></h3>
+<ul>
+<li class="">Include <code>lyrics</code> in Song objects</li>
+<li class="">advanced_search<!-- -->
+<ul>
+<li class="">Add <code>file</code> to album and artist search</li>
+<li class="">Add <code>track</code> to song search</li>
+<li class="">Add <code>summary</code> to artist search</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-540">API 5.4.0<a href="#api-540" class="hash-link" aria-label="Direct link to API 5.4.0" title="Direct link to API 5.4.0" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added-540000">Added (540000)<a href="#added-540000" class="hash-link" aria-label="Direct link to Added (540000)" title="Direct link to Added (540000)" translate="no">​</a></h3>
+<ul>
+<li class="">advanced_search<!-- -->
+<ul>
+<li class="">Add <code>file</code> to album and artist search</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-533">API 5.3.3<a href="#api-533" class="hash-link" aria-label="Direct link to API 5.3.3" title="Direct link to API 5.3.3" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added-533000">Added (533000)<a href="#added-533000" class="hash-link" aria-label="Direct link to Added (533000)" title="Direct link to Added (533000)" translate="no">​</a></h3>
+<ul>
+<li class="">advanced_search<!-- -->
+<ul>
+<li class="">Add <code>song_title</code> to album search</li>
+<li class="">Add <code>album_title</code> and <code>song_title</code> to artist search</li>
+<li class="">Add <code>orphaned_album</code> to song search</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-533000">Fixed (533000)<a href="#fixed-533000" class="hash-link" aria-label="Direct link to Fixed (533000)" title="Direct link to Fixed (533000)" translate="no">​</a></h3>
+<ul>
+<li class="">Api4::record_play had the <code>user</code> as mandatory again</li>
+<li class="">After catalog actions; verify songs with an orphaned album which you won&#x27;t be able to find in the ui</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-532">API 5.3.2<a href="#api-532" class="hash-link" aria-label="Direct link to API 5.3.2" title="Direct link to API 5.3.2" translate="no">​</a></h2>
+<p><strong>NOTE</strong> NO CHANGE</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-531">API 5.3.1<a href="#api-531" class="hash-link" aria-label="Direct link to API 5.3.1" title="Direct link to API 5.3.1" translate="no">​</a></h2>
+<p><strong>NOTE</strong> NO CHANGE</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-530">API 5.3.0<a href="#api-530" class="hash-link" aria-label="Direct link to API 5.3.0" title="Direct link to API 5.3.0" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added-530000">Added (530000)<a href="#added-530000" class="hash-link" aria-label="Direct link to Added (530000)" title="Direct link to Added (530000)" translate="no">​</a></h3>
+<ul>
+<li class="">advanced_search:<!-- -->
+<ul>
+<li class="">Add <code>songrating</code> to album search (My Rating (Song))</li>
+<li class="">Add <code>songrating</code> (My Rating (Song)) and <code>albumrating</code> (My Rating (Album)) to artist search</li>
+<li class="">Allow empty/null searches for all mbid searches</li>
+<li class="">Allow empty/null searches for label searches</li>
+<li class="">Add <code>song_count</code> to album and artist search</li>
+<li class="">Add <code>album_count</code> to artist search</li>
+<li class="">Add <code>myplayedartist</code> (Played by Me (Artist)) to album search</li>
+<li class="">Add <code>song_artist</code> to album search</li>
+<li class="">Add alias <code>album_artist</code> to album search for <code>artist</code> searches</li>
+<li class="">Add <code>recent_added</code> to album search</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-521">API 5.2.1<a href="#api-521" class="hash-link" aria-label="Direct link to API 5.2.1" title="Direct link to API 5.2.1" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added-521000">Added (521000)<a href="#added-521000" class="hash-link" aria-label="Direct link to Added (521000)" title="Direct link to Added (521000)" translate="no">​</a></h3>
+<ul>
+<li class="">API5<!-- -->
+<ul>
+<li class="">The docs for errors have been extended for the type when returned</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="changed-521000">Changed (521000)<a href="#changed-521000" class="hash-link" aria-label="Direct link to Changed (521000)" title="Direct link to Changed (521000)" translate="no">​</a></h3>
+<ul>
+<li class="">API5<!-- -->
+<ul>
+<li class="">Return the xml total_count of playlists based on hide_search preference</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-521000">Fixed (521000)<a href="#fixed-521000" class="hash-link" aria-label="Direct link to Fixed (521000)" title="Direct link to Fixed (521000)" translate="no">​</a></h3>
+<ul>
+<li class="">API5<!-- -->
+<ul>
+<li class="">Some errors were returning the value and not the parameter on error</li>
+</ul>
+</li>
+<li class="">API4<!-- -->
+<ul>
+<li class="">update_from_tags: type case error</li>
+<li class="">rate: Object type to class mapping</li>
+<li class="">flag: Object type to class mapping</li>
+<li class="">update_art: Object type to class mapping and type case check</li>
+<li class="">update_from_tags: Object type to class mapping</li>
+<li class="">genre and tag function compatibility</li>
+</ul>
+</li>
+<li class="">API3<!-- -->
+<ul>
+<li class="">stats: incorrect getRandom call</li>
+<li class="">rate: Object type to class mapping</li>
+<li class="">playlist: bad escaping on the playlist id</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-520">API 5.2.0<a href="#api-520" class="hash-link" aria-label="Direct link to API 5.2.0" title="Direct link to API 5.2.0" translate="no">​</a></h2>
+<p>Check out the docs for multi API support at ampache.org (<code>https://ampache.org/api</code>)</p>
+<p><strong>note</strong> JSON didn&#x27;t exist for API3 so all json requests from API3 calls will revert to API5</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added-520000">Added (520000)<a href="#added-520000" class="hash-link" aria-label="Direct link to Added (520000)" title="Direct link to Added (520000)" translate="no">​</a></h3>
+<ul>
+<li class="">Support for API3, API4 and API5 responses including PHP8 support (keeps original tag calls)</li>
+<li class="">API5<!-- -->
+<ul>
+<li class="">playlists: add parameter <code>show_dupes</code> if true ignore &#x27;api_hide_dupe_searches&#x27; setting</li>
+<li class="">get_art: add parameter <code>fallback</code> if true return default art (&#x27;blankalbum.png&#x27;) instead of an error</li>
+</ul>
+</li>
+<li class="">API4<!-- -->
+<ul>
+<li class="">playlists: add parameter <code>show_dupes</code> if true ignore &#x27;api_hide_dupe_searches&#x27; setting</li>
+</ul>
+</li>
+<li class="">API3<!-- -->
+<ul>
+<li class="">Added genre calls as an alias to tag functions to match API4 and API5</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-520000">Fixed (520000)<a href="#fixed-520000" class="hash-link" aria-label="Direct link to Fixed (520000)" title="Direct link to Fixed (520000)" translate="no">​</a></h3>
+<ul>
+<li class="">Session and user id identification and errors from that</li>
+<li class="">API5<!-- -->
+<ul>
+<li class="">playlists: sql for searches wasn&#x27;t filtering</li>
+<li class="">Art URL for searches was malformed</li>
+</ul>
+</li>
+<li class="">API4<!-- -->
+<ul>
+<li class="">Art URL for searches was malformed</li>
+</ul>
+</li>
+<li class="">API3<!-- -->
+<ul>
+<li class="">democratic: This method was broken in API3 and never worked correctly</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-511">API 5.1.1<a href="#api-511" class="hash-link" aria-label="Direct link to API 5.1.1" title="Direct link to API 5.1.1" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-511000">Fixed (511000)<a href="#fixed-511000" class="hash-link" aria-label="Direct link to Fixed (511000)" title="Direct link to Fixed (511000)" translate="no">​</a></h3>
+<ul>
+<li class="">Access to podcast_episode_delete</li>
+<li class="">stats calls with an offest and limit</li>
+<li class="">advanced_search calls with an offset and limit</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-510">API 5.1.0<a href="#api-510" class="hash-link" aria-label="Direct link to API 5.1.0" title="Direct link to API 5.1.0" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added-510000">Added (510000)<a href="#added-510000" class="hash-link" aria-label="Direct link to Added (510000)" title="Direct link to Added (510000)" translate="no">​</a></h3>
+<ul>
+<li class="">NEW API functions<!-- -->
+<ul>
+<li class="">Api::live_stream (get a radio stream by id)</li>
+<li class="">Api::live_streams</li>
+</ul>
+</li>
+<li class="">Api::stream Added type &#x27;podcast_episode&#x27; (&#x27;podcast&#x27; to be removed in Ampache6)</li>
+<li class="">Add &#x27;time&#x27; and &#x27;size&#x27; to all podcast_episode responses</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="changed-510000">Changed (510000)<a href="#changed-510000" class="hash-link" aria-label="Direct link to Changed (510000)" title="Direct link to Changed (510000)" translate="no">​</a></h3>
+<ul>
+<li class="">live_stream objects added &#x27;catalog&#x27; and &#x27;site_url&#x27;</li>
+<li class="">stats: additional type values: &#x27;video&#x27;, &#x27;playlist&#x27;, &#x27;podcast&#x27;, &#x27;podcast_episode&#x27;</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-510000">Fixed (510000)<a href="#fixed-510000" class="hash-link" aria-label="Direct link to Fixed (510000)" title="Direct link to Fixed (510000)" translate="no">​</a></h3>
+<ul>
+<li class="">get_indexes: JSON didn&#x27;t think live_streams was valid (it is)</li>
+<li class="">record_play: user is optional</li>
+<li class="">Bad xml tags in deleted functions</li>
+<li class="">scrobble: Add song_mbid, artist_mbid, album_mbid (docs have no &#x27;_&#x27; so support both)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-500">API 5.0.0<a href="#api-500" class="hash-link" aria-label="Direct link to API 5.0.0" title="Direct link to API 5.0.0" translate="no">​</a></h2>
+<p>All API code that used &#x27;Tag&#x27; now references &#x27;Genre&#x27; instead</p>
+<p>This version of the API is the first semantic version. &quot;5.0.0&quot;</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added-500000">Added (500000)<a href="#added-500000" class="hash-link" aria-label="Direct link to Added (500000)" title="Direct link to Added (500000)" translate="no">​</a></h3>
+<ul>
+<li class="">Add global playcount to podcast_episode and video responses</li>
+<li class="">searches (the number of saved smartlists) added to the handshake/ping response</li>
+<li class="">NEW API functions<!-- -->
+<ul>
+<li class="">Api::song_delete (Delete files when you are allowed to)</li>
+<li class="">Api::user_preferences (Get your user preferences)</li>
+<li class="">Api::user_preference (Get your preference by name)</li>
+<li class="">Api::system_update (Check Ampache for updates and run the update if there is one.)</li>
+<li class="">Api::system_preferences (Preferences for the system user)</li>
+<li class="">Api::system_preference (Get a system preference by name)</li>
+<li class="">Api::preference_create (Add a new preference to Ampache)</li>
+<li class="">Api::preference_edit (Edit a preference value by name; optionally apply to all users)</li>
+<li class="">Api::preference_delete (Delete a preference by name)</li>
+<li class="">Api::labels (list your record labels)</li>
+<li class="">Api::label (get a label by id)</li>
+<li class="">Api::label_artists (get all artists attached to that label)</li>
+<li class="">Api::get_bookmark (See if you&#x27;ve previously played the file)</li>
+<li class="">Api::bookmarks (List all bookmarks created by your account)</li>
+<li class="">Api::bookmark_create (Create a bookmark to allow revisting later)</li>
+<li class="">Api::bookmark_edit (Edit a bookmark)</li>
+<li class="">Api::bookmark_delete (Delete a bookmark by object id, type, user and client name)</li>
+<li class="">Api::localplay_songs (Get the list of songs in your localplay instance)</li>
+<li class="">API::deleted_songs</li>
+<li class="">API::deleted_podcast_episodes</li>
+<li class="">API::deleted_videos</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="changed-500000">Changed (500000)<a href="#changed-500000" class="hash-link" aria-label="Direct link to Changed (500000)" title="Direct link to Changed (500000)" translate="no">​</a></h3>
+<ul>
+<li class="">The API version matches release version &#x27;5.0.0&#x27;</li>
+<li class="">A backcompatible version (500000) is sent when using old api versions</li>
+<li class="">handshake and ping counts now return the actual object counts for playlists<!-- -->
+<ul>
+<li class="">&#x27;playlists&#x27; =&gt; $counts[&#x27;playlist&#x27;],</li>
+<li class="">&#x27;searches&#x27; =&gt; $counts[&#x27;search&#x27;],</li>
+<li class="">&#x27;playlists_searches&#x27; =&gt; $counts[&#x27;playlist&#x27;] + $counts[&#x27;search&#x27;]</li>
+</ul>
+</li>
+<li class="">Renamed functions:<!-- -->
+<ul>
+<li class="">tags =&gt; genres</li>
+<li class="">tag =&gt; genre</li>
+<li class="">tag_artists =&gt; genre_artists</li>
+<li class="">tag_albums =&gt; genre_albums</li>
+<li class="">tag_songs =&gt; genre_songs</li>
+</ul>
+</li>
+<li class="">Don&#x27;t allow duplicate podcast feeds</li>
+<li class="">Make filter optional in shares, genre_artists, genre_albums, genre_songs (Used as a general catch all method like genres)</li>
+<li class="">Error Codes and response structure has changed<!-- -->
+<ul>
+<li class="">4700 Access Control not Enabled</li>
+<li class="">4701 Received Invalid Handshake</li>
+<li class="">4703 Access Denied</li>
+<li class="">4704 Not Found</li>
+<li class="">4705 Missing Method</li>
+<li class="">4706 Depreciated Method</li>
+<li class="">4710 Bad Request</li>
+<li class="">4742 Failed Access Check</li>
+</ul>
+</li>
+<li class="">stats: Removed back compat from older versions. Only &#x27;type&#x27; is mandatory</li>
+<li class="">Return empty objects when the request was correct but the results were empty</li>
+<li class="">Don&#x27;t transcode podcast_episodes</li>
+<li class="">localplay<!-- -->
+<ul>
+<li class="">Added &#x27;track&#x27; parameter used by &#x27;skip&#x27; commands to go to the playlist track (playlist starts at 1)</li>
+</ul>
+</li>
+<li class="">system_update: update the database if required as well</li>
+<li class="">playlist_edit: added &#x27;owner&#x27; as an optional parameter (Change playlist owner to the user id)</li>
+<li class="">catalog_file: Allow comma-separate task values. (good for API inotify scripts)</li>
+<li class="">podcast_episode object &quot;pubdate&quot; has been changed to ISO 8601 date (2004-02-12T15:19:21+00:00)</li>
+<li class="">podcast object &quot;build_date&quot; and &quot;sync_date&quot; have also been changed to ISO 8601 date</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-500000">Fixed (500000)<a href="#fixed-500000" class="hash-link" aria-label="Direct link to Fixed (500000)" title="Direct link to Fixed (500000)" translate="no">​</a></h3>
+<ul>
+<li class="">catalog_file: Couldn&#x27;t add files</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-443">API 4.4.3<a href="#api-443" class="hash-link" aria-label="Direct link to API 4.4.3" title="Direct link to API 4.4.3" translate="no">​</a></h2>
+<p><strong>NOTE</strong> NO CHANGE</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-442">API 4.4.2<a href="#api-442" class="hash-link" aria-label="Direct link to API 4.4.2" title="Direct link to API 4.4.2" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-442000">Fixed (442000)<a href="#fixed-442000" class="hash-link" aria-label="Direct link to Fixed (442000)" title="Direct link to Fixed (442000)" translate="no">​</a></h3>
+<ul>
+<li class="">API::indexes Artist albums were being added incorrectly for XML</li>
+<li class="">Send back the full album name in responses</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-441">API 4.4.1<a href="#api-441" class="hash-link" aria-label="Direct link to API 4.4.1" title="Direct link to API 4.4.1" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-441000">Fixed (441000)<a href="#fixed-441000" class="hash-link" aria-label="Direct link to Fixed (441000)" title="Direct link to Fixed (441000)" translate="no">​</a></h3>
+<ul>
+<li class="">API::stats would not offset recent calls</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-440">API 4.4.0<a href="#api-440" class="hash-link" aria-label="Direct link to API 4.4.0" title="Direct link to API 4.4.0" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added-440000">Added (440000)<a href="#added-440000" class="hash-link" aria-label="Direct link to Added (440000)" title="Direct link to Added (440000)" translate="no">​</a></h3>
+<ul>
+<li class="">NEW API functions<!-- -->
+<ul>
+<li class="">Api::users (ID and Username of the site users)</li>
+</ul>
+</li>
+<li class="">Api::localplay added new options to &#x27;command&#x27; (&#x27;pause&#x27;, &#x27;add&#x27;, &#x27;volume_up&#x27;, &#x27;volume_down&#x27;, &#x27;volume_mute&#x27;, &#x27;delete_all&#x27;, &#x27;skip&#x27;)</li>
+<li class="">Api::localplay added parameters:<!-- -->
+<ul>
+<li class="">&#x27;oid&#x27; (integer) object_id to add //optional</li>
+<li class="">&#x27;type&#x27; (string) Default: &#x27;Song&#x27; (&#x27;Song&#x27;, &#x27;Video&#x27;, &#x27;Podcast_Episode&#x27;, &#x27;Channel&#x27;, &#x27;Broadcast&#x27;, &#x27;Democratic&#x27;, &#x27;Live_Stream&#x27;) //optional</li>
+<li class="">&#x27;clear&#x27; (integer) 0|1 clear the current playlist on add //optional</li>
+</ul>
+</li>
+<li class="">Api::playlist_edit added new parameter &#x27;sort&#x27;: (0,1) sort the playlist by &#x27;Artist, Album, Song&#x27; //optional</li>
+<li class="">Api::get_indexes<!-- -->
+<ul>
+<li class="">New type options: &#x27;album_artist&#x27;, &#x27;podcast&#x27;, &#x27;podcast_episode&#x27;, &#x27;share&#x27;, &#x27;video&#x27;</li>
+<li class="">Added parameter &#x27;include&#x27;: (0,1) (add the extra songs details if a playlist or podcast_episodes if a podcast)</li>
+</ul>
+</li>
+<li class="">Api::rate - Added types &#x27;playlist&#x27;, &#x27;podcast&#x27;, &#x27;podcast_episode&#x27;, &#x27;video&#x27;, &#x27;tvshow&#x27;, &#x27;tvshow_season&#x27;</li>
+<li class="">Api::flag - Added types &#x27;podcast&#x27;, &#x27;podcast_episode&#x27;, &#x27;video&#x27;, &#x27;tvshow&#x27;, &#x27;tvshow_season&#x27;</li>
+<li class="">Add time to artist and album objects. (total time of all songs in seconds)</li>
+<li class="">Add songcount, albumcount to artist objects. (time in seconds)</li>
+<li class="">Add songcount to album objects. (time in seconds)</li>
+<li class="">Add type (release_type) to album objects</li>
+<li class="">Add disk to song objects</li>
+<li class="">Add time to video objects. (time in seconds)</li>
+<li class="">Add title, mime, catalog to podcast_episodes</li>
+<li class="">Api::advanced_search Add &#x27;playlist&#x27;, &#x27;user&#x27; and &#x27;video&#x27; to search types</li>
+<li class="">Api::handshake added extra total counts to the response<!-- -->
+<ul>
+<li class="">users, tags, podcasts, podcast_episodes, shares, licenses, live_streams, labels</li>
+</ul>
+</li>
+<li class="">Api::ping match the handshake response (excluding the auth token)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="changed-440000">Changed (440000)<a href="#changed-440000" class="hash-link" aria-label="Direct link to Changed (440000)" title="Direct link to Changed (440000)" translate="no">​</a></h3>
+<ul>
+<li class="">get_indexes: &#x27;playlist&#x27; now requires include=1 for xml calls if you want the tracks</li>
+<li class="">Make filter optional in shares</li>
+<li class="">Api::podcast_episodes<!-- -->
+<ul>
+<li class="">&quot;url&quot; is now a play url (instead of a link to the episode)</li>
+<li class="">&quot;public_url&quot; is now the old episode link</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-440000">Fixed (440000)<a href="#fixed-440000" class="hash-link" aria-label="Direct link to Fixed (440000)" title="Direct link to Fixed (440000)" translate="no">​</a></h3>
+<ul>
+<li class="">Api::podcast_edit wasn&#x27;t able to edit a podcast...</li>
+<li class="">Api::democratic was using action from localplay in the return responses</li>
+<li class="">get_indexes for XML didn&#x27;t include podcast indexes</li>
+<li class="">Set OUTDATED_DATABASE_OK on image.php, play/index.php and share.php to stop blocking requests</li>
+<li class="">Don&#x27;t limit sub items when using a limit (e.g return all podcast episodes when selecting a podcast)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="deprecated-440000">Deprecated (440000)<a href="#deprecated-440000" class="hash-link" aria-label="Direct link to Deprecated (440000)" title="Direct link to Deprecated (440000)" translate="no">​</a></h3>
+<ul>
+<li class="">Dropped in API 5.0.0<!-- -->
+<ul>
+<li class="">Api::get_indexes; stop including playlist track and id in xml by default</li>
+<li class="">Album objects: &quot;tracks&quot; will only include track details. Use &quot;songcount&quot;</li>
+<li class="">Artist objects: &quot;albums&quot;, &quot;songs&quot; will only include track details Use &quot;albumcount&quot; and &quot;songcount&quot;</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-430">API 4.3.0<a href="#api-430" class="hash-link" aria-label="Direct link to API 4.3.0" title="Direct link to API 4.3.0" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="changed-430000">Changed (430000)<a href="#changed-430000" class="hash-link" aria-label="Direct link to Changed (430000)" title="Direct link to Changed (430000)" translate="no">​</a></h3>
+<ul>
+<li class="">Api::record_play<!-- -->
+<ul>
+<li class="">Make &#x27;user&#x27; parameter optional</li>
+<li class="">Allow &#x27;user&#x27; to the be user_id <strong>or</strong> the username string</li>
+<li class="">Add &#x27;date&#x27; parameter (optional)</li>
+<li class="">Require 100 (Admin) permission to record plays for other users</li>
+</ul>
+</li>
+<li class="">Api::get_indexes<!-- -->
+<ul>
+<li class="">Add &#x27;hide_search&#x27; parameter (optional)</li>
+</ul>
+</li>
+<li class="">Api::playlists<!-- -->
+<ul>
+<li class="">Add &#x27;hide_search&#x27; parameter (optional)</li>
+</ul>
+</li>
+<li class="">Setting a limit of &#x27;none&#x27; would slice away all the results</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-426">API 4.2.6<a href="#api-426" class="hash-link" aria-label="Direct link to API 4.2.6" title="Direct link to API 4.2.6" translate="no">​</a></h2>
+<p><strong>NOTE</strong> NO CHANGE</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-425">API 4.2.5<a href="#api-425" class="hash-link" aria-label="Direct link to API 4.2.5" title="Direct link to API 4.2.5" translate="no">​</a></h2>
+<p><strong>NOTE</strong> NO CHANGE</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-424">API 4.2.4<a href="#api-424" class="hash-link" aria-label="Direct link to API 4.2.4" title="Direct link to API 4.2.4" translate="no">​</a></h2>
+<p><strong>NOTE</strong> NO CHANGE</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-423">API 4.2.3<a href="#api-423" class="hash-link" aria-label="Direct link to API 4.2.3" title="Direct link to API 4.2.3" translate="no">​</a></h2>
+<p><strong>NOTE</strong> NO CHANGE</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-422">API 4.2.2<a href="#api-422" class="hash-link" aria-label="Direct link to API 4.2.2" title="Direct link to API 4.2.2" translate="no">​</a></h2>
+<p>Minor bugfixes</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added-422000">Added (422000)<a href="#added-422000" class="hash-link" aria-label="Direct link to Added (422000)" title="Direct link to Added (422000)" translate="no">​</a></h3>
+<ul>
+<li class="">Api::advanced_search added parameter &#x27;random&#x27; (0|1) to shuffle your searches</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="changed-422000">Changed (422000)<a href="#changed-422000" class="hash-link" aria-label="Direct link to Changed (422000)" title="Direct link to Changed (422000)" translate="no">​</a></h3>
+<ul>
+<li class="">Remove spaces from advanced_search rule names. (Backwards compatible with old names)<!-- -->
+<ul>
+<li class="">&#x27;has image&#x27; =&gt; &#x27;has_image&#x27;</li>
+<li class="">&#x27;image height&#x27; =&gt; &#x27;image_height&#x27;</li>
+<li class="">&#x27;image width&#x27; =&gt; &#x27;image_width&#x27;</li>
+<li class="">&#x27;filename&#x27; =&gt; &#x27;file&#x27; (Video search)</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="deprecated-422000">Deprecated (422000)<a href="#deprecated-422000" class="hash-link" aria-label="Direct link to Deprecated (422000)" title="Direct link to Deprecated (422000)" translate="no">​</a></h3>
+<ul>
+<li class="">Search rules &#x27;has image&#x27;, &#x27;image height&#x27;, &#x27;image width&#x27;, &#x27;filename&#x27;. (Removed in Ampache 5.0.0)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-422000">Fixed (422000)<a href="#fixed-422000" class="hash-link" aria-label="Direct link to Fixed (422000)" title="Direct link to Fixed (422000)" translate="no">​</a></h3>
+<ul>
+<li class="">Api::stream, Api::download Api::playlist_generate &#x27;format&#x27; parameter was overwritten with &#x27;xml&#x27; or &#x27;json&#x27;</li>
+<li class="">Produce valid XML for playlist_generate using the &#x27;id&#x27; format in XML</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-421">API 4.2.1<a href="#api-421" class="hash-link" aria-label="Direct link to API 4.2.1" title="Direct link to API 4.2.1" translate="no">​</a></h2>
+<p>No functional changes from 4.2.0</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-421000">Fixed (421000)<a href="#fixed-421000" class="hash-link" aria-label="Direct link to Fixed (421000)" title="Direct link to Fixed (421000)" translate="no">​</a></h3>
+<ul>
+<li class="">Filter in &quot;playlist&quot; and &quot;playlist_songs&quot; fixed</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-420">API 4.2.0<a href="#api-420" class="hash-link" aria-label="Direct link to API 4.2.0" title="Direct link to API 4.2.0" translate="no">​</a></h2>
+<p><strong>API versions will follow release version and no longer use builds in the integer versions (e.g. 420000)</strong>
+API 5.0.0-release will be the first Ampache release to match the release string.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added-420000">Added (420000)<a href="#added-420000" class="hash-link" aria-label="Direct link to Added (420000)" title="Direct link to Added (420000)" translate="no">​</a></h3>
+<ul>
+<li class="">JSON API now available!<!-- -->
+<ul>
+<li class="">Call xml as normal:<!-- -->
+<ul>
+<li class="">[<a href="http://music.com.au/server/xml.server.php?action=handshake&amp;auth=APIKEY&amp;version=420000" target="_blank" rel="noopener noreferrer" class="">http://music.com.au/server/xml.server.php?action=handshake&amp;auth=APIKEY&amp;version=420000</a>]</li>
+</ul>
+</li>
+<li class="">Call the JSON server:<!-- -->
+<ul>
+<li class="">[<a href="http://music.com.au/server/json.server.php?action=handshake&amp;auth=APIKEY&amp;version=420000" target="_blank" rel="noopener noreferrer" class="">http://music.com.au/server/json.server.php?action=handshake&amp;auth=APIKEY&amp;version=420000</a>]</li>
+</ul>
+</li>
+<li class="">Example XML and JSON responses available at <a href="https://github.com/ampache/python3-ampache/tree/master/docs" target="_blank" rel="noopener noreferrer" class="">github.com</a></li>
+</ul>
+</li>
+<li class="">NEW API functions<!-- -->
+<ul>
+<li class="">get_similar: send artist or song id to get related objects from last.fm</li>
+<li class="">shares: get a list of shares you can access</li>
+<li class="">share: get a share by id</li>
+<li class="">share_create: create a share</li>
+<li class="">share_edit: edit an existing share</li>
+<li class="">share_delete: delete an existing share</li>
+<li class="">podcasts: get a list of podcasts you can access</li>
+<li class="">podcast: get a podcast by id</li>
+<li class="">podcast_episodes: get a list of podcast_episodes you can access</li>
+<li class="">podcast_episode: get a podcast_episode by id</li>
+<li class="">podcast_episode_delete: delete an existing podcast_episode</li>
+<li class="">podcast_create: create a podcast</li>
+<li class="">podcast_edit: edit an existing podcast</li>
+<li class="">podcast_delete: delete an existing podcast</li>
+<li class="">update_podcast: sync and download new episodes</li>
+<li class="">licenses: get a list of licenses you can access</li>
+<li class="">license: get a license by id</li>
+<li class="">catalogs: get all the catalogs</li>
+<li class="">catalog: get a catalog by id</li>
+<li class="">catalog_file: clean, add, verify using the file path (good for scripting)</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="changed-420000">Changed (420000)<a href="#changed-420000" class="hash-link" aria-label="Direct link to Changed (420000)" title="Direct link to Changed (420000)" translate="no">​</a></h3>
+<ul>
+<li class="">Bump API version to 420000 (4.2.0)</li>
+<li class="">All calls that return songs now include <code>playlisttrack</code> which can be used to identify track order.</li>
+<li class=""><code>playcount</code> added to objects with a playcount.</li>
+<li class=""><code>license</code> added to song objects.</li>
+<li class="">Don&#x27;t gather art when adding songs</li>
+<li class="">Added actions to catalog_action. &#x27;verify_catalog&#x27; &#x27;gather_art&#x27;</li>
+<li class="">API function &quot;playlist_edit&quot;: added ability to edit playlist items<!-- -->
+<ul>
+<li class="">items  = (string) comma-separated song_id&#x27;s (replace existing items with a new object_id) //optional</li>
+<li class="">tracks = (string) comma-separated playlisttrack numbers matched to items in order //optional</li>
+</ul>
+</li>
+<li class="">Random albums will get songs for all disks if album_group enabled</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="deprecated-420000">Deprecated (420000)<a href="#deprecated-420000" class="hash-link" aria-label="Direct link to Deprecated (420000)" title="Direct link to Deprecated (420000)" translate="no">​</a></h3>
+<ul>
+<li class="">API Build number is depreciated (the last 3 digits of the api version)<!-- -->
+<ul>
+<li class="">API 5.0.0 will be released with a string version (&quot;5.0.0-release&quot;)</li>
+<li class="">All future 4.x.x API versions will follow the main Ampache version. (420000, 421000, 422000)</li>
+</ul>
+</li>
+<li class="">total_count in the XML API is depreciated and will be removed in API 5.0.0.<!-- -->
+<ul>
+<li class="">XML can count objects the same was as a JSON array [<a href="https://www.php.net/manual/en/simplexmlelement.count.php" target="_blank" rel="noopener noreferrer" class="">https://www.php.net/manual/en/simplexmlelement.count.php</a>]</li>
+</ul>
+</li>
+<li class="">Genre in songs is depreciated and will be removed in API 5.0.0.<!-- -->
+<ul>
+<li class="">Use tag instead of genre, tag provides a genre ID as well as the name.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-420000">Fixed (420000)<a href="#fixed-420000" class="hash-link" aria-label="Direct link to Fixed (420000)" title="Direct link to Fixed (420000)" translate="no">​</a></h3>
+<ul>
+<li class="">Extra text in catalog API calls</li>
+<li class="">Don&#x27;t fail the API calls when the database needs updating</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-400-build-004">API 4.0.0 build 004<a href="#api-400-build-004" class="hash-link" aria-label="Direct link to API 4.0.0 build 004" title="Direct link to API 4.0.0 build 004" translate="no">​</a></h2>
+<p>Bump API version to 400004 (4.0.0 build 004)</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added-400004">Added (400004)<a href="#added-400004" class="hash-link" aria-label="Direct link to Added (400004)" title="Direct link to Added (400004)" translate="no">​</a></h3>
+<ul>
+<li class="">Add Api::check_access to warn when you can&#x27;t access a function</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-400004">Fixed (400004)<a href="#fixed-400004" class="hash-link" aria-label="Direct link to Fixed (400004)" title="Direct link to Fixed (400004)" translate="no">​</a></h3>
+<ul>
+<li class="">Fix parameters using 0</li>
+<li class="">Get the correct total_count in xml when you set a limit</li>
+<li class="">Fix many XML formatting issues</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-400-build-003">API 4.0.0 build 003<a href="#api-400-build-003" class="hash-link" aria-label="Direct link to API 4.0.0 build 003" title="Direct link to API 4.0.0 build 003" translate="no">​</a></h2>
+<p>Bump API version to 400003 (4.0.0 build 003)</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added-400003">Added (400003)<a href="#added-400003" class="hash-link" aria-label="Direct link to Added (400003)" title="Direct link to Added (400003)" translate="no">​</a></h3>
+<ul>
+<li class="">user_numeric searches also available in the API. <code>http://ampache.org/api/api-xml-methods</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="changed-400003">Changed (400003)<a href="#changed-400003" class="hash-link" aria-label="Direct link to Changed (400003)" title="Direct link to Changed (400003)" translate="no">​</a></h3>
+<ul>
+<li class="">Api::playlist - filter mandatory</li>
+<li class="">Api::playlist_edit - filter mandatory. name and type now optional</li>
+<li class="">Api::user - Extend return values to include more user fields</li>
+<li class="">Playlist::create - Return duplicate playlist ID instead of creating a new one</li>
+<li class="">Do not limit smartlists based on item count (return everything you can access)</li>
+<li class="">Api/Database - Add last_count for search table to speed up access in API</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="removed-400003">Removed (400003)<a href="#removed-400003" class="hash-link" aria-label="Direct link to Removed (400003)" title="Direct link to Removed (400003)" translate="no">​</a></h3>
+<ul>
+<li class="">Artist::check - Remove MBID from Various Artist objects</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed-400003">Fixed (400003)<a href="#fixed-400003" class="hash-link" aria-label="Direct link to Fixed (400003)" title="Direct link to Fixed (400003)" translate="no">​</a></h3>
+<ul>
+<li class="">Fix Song::update_song for label</li>
+<li class="">Fix Api issues relating to playlist access</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-400-build-001">API 4.0.0 build 001<a href="#api-400-build-001" class="hash-link" aria-label="Direct link to API 4.0.0 build 001" title="Direct link to API 4.0.0 build 001" translate="no">​</a></h2>
+<ul>
+<li class="">Bump API version to 400002 (4.0.0 build 001)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added-400002">Added (400002)<a href="#added-400002" class="hash-link" aria-label="Direct link to Added (400002)" title="Direct link to Added (400002)" translate="no">​</a></h3>
+<ul>
+<li class="">Documented the Ampache API <code>http://ampache.org/api/api-xml-methods</code></li>
+<li class="">Include smartlists in the API playlist calls.</li>
+<li class="">Authentication: allow sha256 encrypted apikey for auth<!-- -->
+<ul>
+<li class="">You must send an encrypted api key in the following fashion. (Hash key joined with username)</li>
+<li class="">$passphrase = hash(&#x27;sha256&#x27;, $username . hash(&#x27;sha256&#x27;, $apikey));</li>
+</ul>
+</li>
+<li class="">Added artist_tag to song searches</li>
+<li class="">flag: allows flagging object by id &amp; type</li>
+<li class="">record_play: allows recording play of object without streaming</li>
+<li class="">catalog_action: allow running add_to_catalog|clean_catalog</li>
+<li class="">playlist_edit: allow editing name and type of playlist</li>
+<li class="">goodbye: Destroy session</li>
+<li class="">get_indexes: return simple index lists to allow a quicker library fill.</li>
+<li class="">check_parameter: error when mandatory inputs are missing</li>
+<li class="">stream: Raw stream of song_id</li>
+<li class="">download: Download, not recorded as a play</li>
+<li class="">get_art: Raw art file like subsonic getCoverArt</li>
+<li class="">user_create: &#x27;user&#x27; access level only!</li>
+<li class="">user_update: update user details and passwords for non-admins</li>
+<li class="">user_delete: you can&#x27;t delete yourself or and admin account!</li>
+<li class="">update_from_tags: updates a single album, artist, song from the tag data instead of the entire library!</li>
+<li class="">update_art: updates a single album, artist, song running the gather_art process</li>
+<li class="">update_artist_info: Update artist information and fetch similar artists from last.fm</li>
+<li class="">playlist_generate: Get a list of song xml, indexes or id&#x27;s based on some simple search criteria. care of @4phun</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="changed-400002">Changed (400002)<a href="#changed-400002" class="hash-link" aria-label="Direct link to Changed (400002)" title="Direct link to Changed (400002)" translate="no">​</a></h3>
+<ul>
+<li class="">Authentication: Require a handshake and generate unique sessions at all times</li>
+<li class="">advanced_search<!-- -->
+<ul>
+<li class="">&#x27;is not&#x27; has been added shifting values down the list.
+(0=contains, 1=does not contain, 2=starts with, 3=ends with, 4=is, 5=is not, 6=sounds like, 7=does not sound like)</li>
+<li class="">rule_1[&#x27;name&#x27;] is depreciated. Instead of multiple searches for the same thing rule_1&#x27;name&#x27;
+has been replaced with &#x27;title&#x27; (I have put a temp workaround into the search rules to alleviate this change)</li>
+</ul>
+</li>
+<li class="">stats<!-- -->
+<ul>
+<li class="">allow songs|artists|albums (instead of just albums)</li>
+</ul>
+</li>
+<li class="">playlists<!-- -->
+<ul>
+<li class="">allow return of smartlists as well as regular playlists (set a 5000 limit on unlimited smartlists)</li>
+</ul>
+</li>
+<li class="">playlist_add_song<!-- -->
+<ul>
+<li class="">Added check boolean to skip duplicate songs</li>
+</ul>
+</li>
+<li class="">playlist_remove_song<!-- -->
+<ul>
+<li class="">Allow uid of song instead of the track id from the playlist</li>
+</ul>
+</li>
+</ul></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/zh-Hans/api/api-examples"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">API Examples</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/zh-Hans/docs/configuration/acl"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Access Control Lists</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#api-691-build-12" class="table-of-contents__link toc-highlight">API 6.9.1 Build 12</a><ul><li><a href="#added-691012" class="table-of-contents__link toc-highlight">Added (691012)</a></li></ul></li><li><a href="#api-691-build-11" class="table-of-contents__link toc-highlight">API 6.9.1 Build 11</a><ul><li><a href="#added-691011" class="table-of-contents__link toc-highlight">Added (691011)</a></li><li><a href="#fixed-691011" class="table-of-contents__link toc-highlight">Fixed (691011)</a></li></ul></li><li><a href="#api-690-build-10" class="table-of-contents__link toc-highlight">API 6.9.0 Build 10</a><ul><li><a href="#added-690010" class="table-of-contents__link toc-highlight">Added (690010)</a></li></ul></li><li><a href="#api-690" class="table-of-contents__link toc-highlight">API 6.9.0</a><ul><li><a href="#added-690000" class="table-of-contents__link toc-highlight">Added (690000)</a></li><li><a href="#fixed-690000" class="table-of-contents__link toc-highlight">Fixed (690000)</a></li></ul></li><li><a href="#api-680" class="table-of-contents__link toc-highlight">API 6.8.0</a><ul><li><a href="#added-680000" class="table-of-contents__link toc-highlight">Added (680000)</a></li><li><a href="#changed-680000" class="table-of-contents__link toc-highlight">Changed (680000)</a></li><li><a href="#fixed-680000" class="table-of-contents__link toc-highlight">Fixed (680000)</a></li></ul></li><li><a href="#api-673" class="table-of-contents__link toc-highlight">API 6.7.3</a><ul><li><a href="#added-673000" class="table-of-contents__link toc-highlight">Added (673000)</a></li><li><a href="#fixed-673000" class="table-of-contents__link toc-highlight">Fixed (673000)</a></li></ul></li><li><a href="#api-672" class="table-of-contents__link toc-highlight">API 6.7.2</a><ul><li><a href="#changed-672000" class="table-of-contents__link toc-highlight">Changed (672000)</a></li></ul></li><li><a href="#api-671" class="table-of-contents__link toc-highlight">API 6.7.1</a><ul><li><a href="#added-671000" class="table-of-contents__link toc-highlight">Added (671000)</a></li></ul></li><li><a href="#api-670" class="table-of-contents__link toc-highlight">API 6.7.0</a><ul><li><a href="#added-670000" class="table-of-contents__link toc-highlight">Added (670000)</a></li><li><a href="#changed-670000" class="table-of-contents__link toc-highlight">Changed (670000)</a></li><li><a href="#fixed-670000" class="table-of-contents__link toc-highlight">Fixed (670000)</a></li></ul></li><li><a href="#api-668" class="table-of-contents__link toc-highlight">API 6.6.8</a><ul><li><a href="#changed-668000" class="table-of-contents__link toc-highlight">Changed (668000)</a></li><li><a href="#fixed-668000" class="table-of-contents__link toc-highlight">Fixed (668000)</a></li></ul></li><li><a href="#api-667" class="table-of-contents__link toc-highlight">API 6.6.7</a><ul><li><a href="#added-667000" class="table-of-contents__link toc-highlight">Added (667000)</a></li><li><a href="#changed-667000" class="table-of-contents__link toc-highlight">Changed (667000)</a></li><li><a href="#fixed-667000" class="table-of-contents__link toc-highlight">Fixed (667000)</a></li></ul></li><li><a href="#api-666" class="table-of-contents__link toc-highlight">API 6.6.6</a><ul><li><a href="#fixed-666000" class="table-of-contents__link toc-highlight">Fixed (666000)</a></li></ul></li><li><a href="#api-665" class="table-of-contents__link toc-highlight">API 6.6.5</a><ul><li><a href="#added-665000" class="table-of-contents__link toc-highlight">Added (665000)</a></li><li><a href="#fixed-665000" class="table-of-contents__link toc-highlight">Fixed (665000)</a></li></ul></li><li><a href="#api-664" class="table-of-contents__link toc-highlight">API 6.6.4</a><ul><li><a href="#added-664000" class="table-of-contents__link toc-highlight">Added (664000)</a></li><li><a href="#changed-664000" class="table-of-contents__link toc-highlight">Changed (664000)</a></li></ul></li><li><a href="#api-663" class="table-of-contents__link toc-highlight">API 6.6.3</a></li><li><a href="#api-662" class="table-of-contents__link toc-highlight">API 6.6.2</a><ul><li><a href="#added-662000" class="table-of-contents__link toc-highlight">Added (662000)</a></li><li><a href="#fixed-662000" class="table-of-contents__link toc-highlight">Fixed (662000)</a></li></ul></li><li><a href="#api-661" class="table-of-contents__link toc-highlight">API 6.6.1</a><ul><li><a href="#added-661000" class="table-of-contents__link toc-highlight">Added (661000)</a></li><li><a href="#changed-661000" class="table-of-contents__link toc-highlight">Changed (661000)</a></li></ul></li><li><a href="#api-660" class="table-of-contents__link toc-highlight">API 6.6.0</a><ul><li><a href="#added-660000" class="table-of-contents__link toc-highlight">Added (660000)</a></li><li><a href="#changed-660000" class="table-of-contents__link toc-highlight">Changed (660000)</a></li><li><a href="#fixed-660000" class="table-of-contents__link toc-highlight">Fixed (660000)</a></li></ul></li><li><a href="#api-650" class="table-of-contents__link toc-highlight">API 6.5.0</a><ul><li><a href="#added-650000" class="table-of-contents__link toc-highlight">Added (650000)</a></li><li><a href="#changed-650000" class="table-of-contents__link toc-highlight">Changed (650000)</a></li><li><a href="#fixed-650000" class="table-of-contents__link toc-highlight">Fixed (650000)</a></li></ul></li><li><a href="#api-640" class="table-of-contents__link toc-highlight">API 6.4.0</a><ul><li><a href="#added-640000" class="table-of-contents__link toc-highlight">Added (640000)</a></li><li><a href="#changed-640000" class="table-of-contents__link toc-highlight">Changed (640000)</a></li><li><a href="#fixed-640000" class="table-of-contents__link toc-highlight">Fixed (640000)</a></li></ul></li><li><a href="#api-631" class="table-of-contents__link toc-highlight">API 6.3.1</a><ul><li><a href="#added-631000" class="table-of-contents__link toc-highlight">Added (631000)</a></li></ul></li><li><a href="#api-630" class="table-of-contents__link toc-highlight">API 6.3.0</a><ul><li><a href="#added-630000" class="table-of-contents__link toc-highlight">Added (630000)</a></li><li><a href="#changed-630000" class="table-of-contents__link toc-highlight">Changed (630000)</a></li><li><a href="#fixed-630000" class="table-of-contents__link toc-highlight">Fixed (630000)</a></li></ul></li><li><a href="#api-621" class="table-of-contents__link toc-highlight">API 6.2.1</a></li><li><a href="#api-620" class="table-of-contents__link toc-highlight">API 6.2.0</a><ul><li><a href="#added-620000" class="table-of-contents__link toc-highlight">Added (620000)</a></li><li><a href="#changed-620000" class="table-of-contents__link toc-highlight">Changed (620000)</a></li><li><a href="#fixed-620000" class="table-of-contents__link toc-highlight">Fixed (620000)</a></li></ul></li><li><a href="#api-610" class="table-of-contents__link toc-highlight">API 6.1.0</a><ul><li><a href="#added-610000" class="table-of-contents__link toc-highlight">Added (610000)</a></li><li><a href="#changed-610000" class="table-of-contents__link toc-highlight">Changed (610000)</a></li><li><a href="#fixed-610000" class="table-of-contents__link toc-highlight">Fixed (610000)</a></li></ul></li><li><a href="#api-603" class="table-of-contents__link toc-highlight">API 6.0.3</a><ul><li><a href="#added-603000" class="table-of-contents__link toc-highlight">Added (603000)</a></li><li><a href="#fixed-603000" class="table-of-contents__link toc-highlight">Fixed (603000)</a></li></ul></li><li><a href="#api-602" class="table-of-contents__link toc-highlight">API 6.0.2</a></li><li><a href="#api-601" class="table-of-contents__link toc-highlight">API 6.0.1</a><ul><li><a href="#changed-601000" class="table-of-contents__link toc-highlight">Changed (601000)</a></li><li><a href="#fixed-601000" class="table-of-contents__link toc-highlight">Fixed (601000)</a></li></ul></li><li><a href="#api-600" class="table-of-contents__link toc-highlight">API 6.0.0</a><ul><li><a href="#added-600000" class="table-of-contents__link toc-highlight">Added (600000)</a></li><li><a href="#changed-600000" class="table-of-contents__link toc-highlight">Changed (600000)</a></li><li><a href="#removed-600000" class="table-of-contents__link toc-highlight">Removed (600000)</a></li><li><a href="#fixed-600000" class="table-of-contents__link toc-highlight">Fixed (600000)</a></li></ul></li><li><a href="#api-562" class="table-of-contents__link toc-highlight">API 5.6.2</a><ul><li><a href="#fixed-562000" class="table-of-contents__link toc-highlight">Fixed (562000)</a></li></ul></li><li><a href="#api-561" class="table-of-contents__link toc-highlight">API 5.6.1</a></li><li><a href="#api-560" class="table-of-contents__link toc-highlight">API 5.6.0</a><ul><li><a href="#fixed-560000" class="table-of-contents__link toc-highlight">Fixed (560000)</a></li></ul></li><li><a href="#api-557" class="table-of-contents__link toc-highlight">API 5.5.7</a><ul><li><a href="#changed-557000" class="table-of-contents__link toc-highlight">Changed (557000)</a></li></ul></li><li><a href="#api-556" class="table-of-contents__link toc-highlight">API 5.5.6</a><ul><li><a href="#changed-556000" class="table-of-contents__link toc-highlight">Changed (556000)</a></li><li><a href="#fixed-556000" class="table-of-contents__link toc-highlight">Fixed (556000)</a></li></ul></li><li><a href="#api-555" class="table-of-contents__link toc-highlight">API 5.5.5</a></li><li><a href="#api-554" class="table-of-contents__link toc-highlight">API 5.5.4</a><ul><li><a href="#fixed-554000" class="table-of-contents__link toc-highlight">Fixed (554000)</a></li></ul></li><li><a href="#api-553" class="table-of-contents__link toc-highlight">API 5.5.3</a></li><li><a href="#api-552" class="table-of-contents__link toc-highlight">API 5.5.2</a><ul><li><a href="#added-552000" class="table-of-contents__link toc-highlight">Added (552000)</a></li><li><a href="#fixed-552000" class="table-of-contents__link toc-highlight">Fixed (552000)</a></li></ul></li><li><a href="#api-551" class="table-of-contents__link toc-highlight">API 5.5.1</a></li><li><a href="#api-550" class="table-of-contents__link toc-highlight">API 5.5.0</a><ul><li><a href="#added-550000" class="table-of-contents__link toc-highlight">Added (550000)</a></li><li><a href="#fixed-550000" class="table-of-contents__link toc-highlight">Fixed (550000)</a></li></ul></li><li><a href="#api-541" class="table-of-contents__link toc-highlight">API 5.4.1</a><ul><li><a href="#added-541000" class="table-of-contents__link toc-highlight">Added (541000)</a></li></ul></li><li><a href="#api-540" class="table-of-contents__link toc-highlight">API 5.4.0</a><ul><li><a href="#added-540000" class="table-of-contents__link toc-highlight">Added (540000)</a></li></ul></li><li><a href="#api-533" class="table-of-contents__link toc-highlight">API 5.3.3</a><ul><li><a href="#added-533000" class="table-of-contents__link toc-highlight">Added (533000)</a></li><li><a href="#fixed-533000" class="table-of-contents__link toc-highlight">Fixed (533000)</a></li></ul></li><li><a href="#api-532" class="table-of-contents__link toc-highlight">API 5.3.2</a></li><li><a href="#api-531" class="table-of-contents__link toc-highlight">API 5.3.1</a></li><li><a href="#api-530" class="table-of-contents__link toc-highlight">API 5.3.0</a><ul><li><a href="#added-530000" class="table-of-contents__link toc-highlight">Added (530000)</a></li></ul></li><li><a href="#api-521" class="table-of-contents__link toc-highlight">API 5.2.1</a><ul><li><a href="#added-521000" class="table-of-contents__link toc-highlight">Added (521000)</a></li><li><a href="#changed-521000" class="table-of-contents__link toc-highlight">Changed (521000)</a></li><li><a href="#fixed-521000" class="table-of-contents__link toc-highlight">Fixed (521000)</a></li></ul></li><li><a href="#api-520" class="table-of-contents__link toc-highlight">API 5.2.0</a><ul><li><a href="#added-520000" class="table-of-contents__link toc-highlight">Added (520000)</a></li><li><a href="#fixed-520000" class="table-of-contents__link toc-highlight">Fixed (520000)</a></li></ul></li><li><a href="#api-511" class="table-of-contents__link toc-highlight">API 5.1.1</a><ul><li><a href="#fixed-511000" class="table-of-contents__link toc-highlight">Fixed (511000)</a></li></ul></li><li><a href="#api-510" class="table-of-contents__link toc-highlight">API 5.1.0</a><ul><li><a href="#added-510000" class="table-of-contents__link toc-highlight">Added (510000)</a></li><li><a href="#changed-510000" class="table-of-contents__link toc-highlight">Changed (510000)</a></li><li><a href="#fixed-510000" class="table-of-contents__link toc-highlight">Fixed (510000)</a></li></ul></li><li><a href="#api-500" class="table-of-contents__link toc-highlight">API 5.0.0</a><ul><li><a href="#added-500000" class="table-of-contents__link toc-highlight">Added (500000)</a></li><li><a href="#changed-500000" class="table-of-contents__link toc-highlight">Changed (500000)</a></li><li><a href="#fixed-500000" class="table-of-contents__link toc-highlight">Fixed (500000)</a></li></ul></li><li><a href="#api-443" class="table-of-contents__link toc-highlight">API 4.4.3</a></li><li><a href="#api-442" class="table-of-contents__link toc-highlight">API 4.4.2</a><ul><li><a href="#fixed-442000" class="table-of-contents__link toc-highlight">Fixed (442000)</a></li></ul></li><li><a href="#api-441" class="table-of-contents__link toc-highlight">API 4.4.1</a><ul><li><a href="#fixed-441000" class="table-of-contents__link toc-highlight">Fixed (441000)</a></li></ul></li><li><a href="#api-440" class="table-of-contents__link toc-highlight">API 4.4.0</a><ul><li><a href="#added-440000" class="table-of-contents__link toc-highlight">Added (440000)</a></li><li><a href="#changed-440000" class="table-of-contents__link toc-highlight">Changed (440000)</a></li><li><a href="#fixed-440000" class="table-of-contents__link toc-highlight">Fixed (440000)</a></li><li><a href="#deprecated-440000" class="table-of-contents__link toc-highlight">Deprecated (440000)</a></li></ul></li><li><a href="#api-430" class="table-of-contents__link toc-highlight">API 4.3.0</a><ul><li><a href="#changed-430000" class="table-of-contents__link toc-highlight">Changed (430000)</a></li></ul></li><li><a href="#api-426" class="table-of-contents__link toc-highlight">API 4.2.6</a></li><li><a href="#api-425" class="table-of-contents__link toc-highlight">API 4.2.5</a></li><li><a href="#api-424" class="table-of-contents__link toc-highlight">API 4.2.4</a></li><li><a href="#api-423" class="table-of-contents__link toc-highlight">API 4.2.3</a></li><li><a href="#api-422" class="table-of-contents__link toc-highlight">API 4.2.2</a><ul><li><a href="#added-422000" class="table-of-contents__link toc-highlight">Added (422000)</a></li><li><a href="#changed-422000" class="table-of-contents__link toc-highlight">Changed (422000)</a></li><li><a href="#deprecated-422000" class="table-of-contents__link toc-highlight">Deprecated (422000)</a></li><li><a href="#fixed-422000" class="table-of-contents__link toc-highlight">Fixed (422000)</a></li></ul></li><li><a href="#api-421" class="table-of-contents__link toc-highlight">API 4.2.1</a><ul><li><a href="#fixed-421000" class="table-of-contents__link toc-highlight">Fixed (421000)</a></li></ul></li><li><a href="#api-420" class="table-of-contents__link toc-highlight">API 4.2.0</a><ul><li><a href="#added-420000" class="table-of-contents__link toc-highlight">Added (420000)</a></li><li><a href="#changed-420000" class="table-of-contents__link toc-highlight">Changed (420000)</a></li><li><a href="#deprecated-420000" class="table-of-contents__link toc-highlight">Deprecated (420000)</a></li><li><a href="#fixed-420000" class="table-of-contents__link toc-highlight">Fixed (420000)</a></li></ul></li><li><a href="#api-400-build-004" class="table-of-contents__link toc-highlight">API 4.0.0 build 004</a><ul><li><a href="#added-400004" class="table-of-contents__link toc-highlight">Added (400004)</a></li><li><a href="#fixed-400004" class="table-of-contents__link toc-highlight">Fixed (400004)</a></li></ul></li><li><a href="#api-400-build-003" class="table-of-contents__link toc-highlight">API 4.0.0 build 003</a><ul><li><a href="#added-400003" class="table-of-contents__link toc-highlight">Added (400003)</a></li><li><a href="#changed-400003" class="table-of-contents__link toc-highlight">Changed (400003)</a></li><li><a href="#removed-400003" class="table-of-contents__link toc-highlight">Removed (400003)</a></li><li><a href="#fixed-400003" class="table-of-contents__link toc-highlight">Fixed (400003)</a></li></ul></li><li><a href="#api-400-build-001" class="table-of-contents__link toc-highlight">API 4.0.0 build 001</a><ul><li><a href="#added-400002" class="table-of-contents__link toc-highlight">Added (400002)</a></li><li><a href="#changed-400002" class="table-of-contents__link toc-highlight">Changed (400002)</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer"><div class="container container-fluid"><div class="footer__links text--center"><div class="footer__links"><a href="https://github.com/ampache/ampache.org-docs" target="_blank" rel="noopener noreferrer" class="footer__link-item">Website Repo<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><span class="footer__link-separator">·</span><a href="https://ampache.org/old" target="_blank" rel="noopener noreferrer" class="footer__link-item">Old Site<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><span class="footer__link-separator">·</span><a href="https://github.com/ampache/ampache" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><span class="footer__link-separator">·</span><a href="https://hub.docker.com/repository/docker/ampache/ampache" target="_blank" rel="noopener noreferrer" class="footer__link-item">Docker Hub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><span class="footer__link-separator">·</span><a href="https://twitter.com/ampache" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><span class="footer__link-separator">·</span><a href="https://fosstodon.org/@ampache" target="_blank" rel="noopener noreferrer" class="footer__link-item">Mastodon<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><span class="footer__link-separator">·</span><a href="https://bsky.app/profile/ampache.bsky.social" target="_blank" rel="noopener noreferrer" class="footer__link-item">Bluesky<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><span class="footer__link-separator">·</span><a href="https://t.me/ampache" target="_blank" rel="noopener noreferrer" class="footer__link-item">Telegram<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><span class="footer__link-separator">·</span><a href="https://www.reddit.com/r/ampache" target="_blank" rel="noopener noreferrer" class="footer__link-item">r/ampache<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2001 - 2026 Ampache.org</div></div></div></footer></div>
+</body>
+</html>

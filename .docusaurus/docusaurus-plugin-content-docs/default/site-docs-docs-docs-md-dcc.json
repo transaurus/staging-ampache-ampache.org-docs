@@ -5,7 +5,7 @@
   "source": "@site/docs/docs/docs.md",
   "sourceDirName": "docs",
   "slug": "/docs/",
-  "permalink": "/docs/",
+  "permalink": "/zh-Hans/docs/",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -18,10 +18,10 @@
   "sidebar": "api",
   "previous": {
     "title": "Download",
-    "permalink": "/download"
+    "permalink": "/zh-Hans/download"
   },
   "next": {
     "title": "Ampache Use Cases",
-    "permalink": "/docs/information/ampache-use-cases"
+    "permalink": "/zh-Hans/docs/information/ampache-use-cases"
   }
 }

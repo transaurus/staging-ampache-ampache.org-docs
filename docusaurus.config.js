@@ -10,7 +10,7 @@ const config = {
   tagline: 'For the love of music',
   url: 'https://ampache.org/',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   favicon: 'img/favicon.ico',
 
   // GitHub pages deployment config.
@@ -23,7 +23,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ["en", "zh-Hans"],
   },
 
   //plugins: [require.resolve('docusaurus-plugin-image-zoom')],

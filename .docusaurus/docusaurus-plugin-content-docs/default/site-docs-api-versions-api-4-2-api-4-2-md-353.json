@@ -5,7 +5,7 @@
   "source": "@site/docs/api/versions/api-4.2/api-4.2.md",
   "sourceDirName": "api/versions/api-4.2",
   "slug": "/api/versions/api-4.2/",
-  "permalink": "/api/versions/api-4.2/",
+  "permalink": "/zh-Hans/api/versions/api-4.2/",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -18,10 +18,10 @@
   "sidebar": "api",
   "previous": {
     "title": "Advanced Search",
-    "permalink": "/api/versions/api-4.3/api-advanced-search"
+    "permalink": "/zh-Hans/api/versions/api-4.3/api-advanced-search"
   },
   "next": {
     "title": "XML Methods",
-    "permalink": "/api/versions/api-4.2/api-xml-methods"
+    "permalink": "/zh-Hans/api/versions/api-4.2/api-xml-methods"
   }
 }

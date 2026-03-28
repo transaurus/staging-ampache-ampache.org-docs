@@ -5,7 +5,7 @@
   "source": "@site/docs/demo.md",
   "sourceDirName": ".",
   "slug": "/demo",
-  "permalink": "/demo",
+  "permalink": "/zh-Hans/demo",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -18,10 +18,10 @@
   "sidebar": "api",
   "previous": {
     "title": "Ampache",
-    "permalink": "/"
+    "permalink": "/zh-Hans/"
   },
   "next": {
     "title": "Donate",
-    "permalink": "/donate"
+    "permalink": "/zh-Hans/donate"
   }
 }

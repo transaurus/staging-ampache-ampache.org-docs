@@ -5,7 +5,7 @@
   "source": "@site/docs/docs/configuration/localplay/vlc.md",
   "sourceDirName": "docs/configuration/localplay",
   "slug": "/docs/configuration/localplay/vlc",
-  "permalink": "/docs/configuration/localplay/vlc",
+  "permalink": "/zh-Hans/docs/configuration/localplay/vlc",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -18,10 +18,10 @@
   "sidebar": "api",
   "previous": {
     "title": "UPNP",
-    "permalink": "/docs/configuration/localplay/upnp"
+    "permalink": "/zh-Hans/docs/configuration/localplay/upnp"
   },
   "next": {
     "title": "HttpQ Localplay",
-    "permalink": "/docs/configuration/localplay/httpq"
+    "permalink": "/zh-Hans/docs/configuration/localplay/httpq"
   }
 }

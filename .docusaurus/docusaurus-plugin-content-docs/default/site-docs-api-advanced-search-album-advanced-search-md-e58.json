@@ -5,7 +5,7 @@
   "source": "@site/docs/api/advanced-search/album-advanced-search.md",
   "sourceDirName": "api/advanced-search",
   "slug": "/api/advanced-search/album-advanced-search",
-  "permalink": "/api/advanced-search/album-advanced-search",
+  "permalink": "/zh-Hans/api/advanced-search/album-advanced-search",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -18,10 +18,10 @@
   "sidebar": "api",
   "previous": {
     "title": "Song Search",
-    "permalink": "/api/advanced-search/song-advanced-search"
+    "permalink": "/zh-Hans/api/advanced-search/song-advanced-search"
   },
   "next": {
     "title": "Artist Search",
-    "permalink": "/api/advanced-search/artist-advanced-search"
+    "permalink": "/zh-Hans/api/advanced-search/artist-advanced-search"
   }
 }

@@ -5,7 +5,7 @@
   "source": "@site/docs/api/versions/api-5.1/api-5.1.md",
   "sourceDirName": "api/versions/api-5.1",
   "slug": "/api/versions/api-5.1/",
-  "permalink": "/api/versions/api-5.1/",
+  "permalink": "/zh-Hans/api/versions/api-5.1/",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -18,10 +18,10 @@
   "sidebar": "api",
   "previous": {
     "title": "Advanced Search",
-    "permalink": "/api/versions/api-6.0/api-advanced-search"
+    "permalink": "/zh-Hans/api/versions/api-6.0/api-advanced-search"
   },
   "next": {
     "title": "Standards",
-    "permalink": "/api/versions/api-5.1/api-standards"
+    "permalink": "/zh-Hans/api/versions/api-5.1/api-standards"
   }
 }

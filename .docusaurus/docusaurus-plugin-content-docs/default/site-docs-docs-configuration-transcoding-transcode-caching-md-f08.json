@@ -5,7 +5,7 @@
   "source": "@site/docs/docs/configuration/transcoding/transcode-caching.md",
   "sourceDirName": "docs/configuration/transcoding",
   "slug": "/docs/configuration/transcoding/transcode-caching",
-  "permalink": "/docs/configuration/transcoding/transcode-caching",
+  "permalink": "/zh-Hans/docs/configuration/transcoding/transcode-caching",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -18,10 +18,10 @@
   "sidebar": "api",
   "previous": {
     "title": "Transcoding",
-    "permalink": "/docs/configuration/transcoding/"
+    "permalink": "/zh-Hans/docs/configuration/transcoding/"
   },
   "next": {
     "title": "Democratic Play",
-    "permalink": "/docs/configuration/democratic"
+    "permalink": "/zh-Hans/docs/configuration/democratic"
   }
 }

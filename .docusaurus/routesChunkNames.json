@@ -1,654 +1,654 @@
 {
-  "/-7ae": {
+  "/zh-Hans/-f21": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "aba21aa0"
     }
   },
-  "/-f4f": {
+  "/zh-Hans/-cde": {
     "__comp": "a7bd4aaa",
-    "__props": "22dd74f7"
+    "__props": "cbdb462c"
   },
-  "/-de7": {
+  "/zh-Hans/-11c": {
     "__comp": "a94703ab"
   },
-  "/api/-e54": {
+  "/zh-Hans/api/-f46": {
     "__comp": "17896441",
     "content": "5e8c322a"
   },
-  "/api/advanced-search/album-advanced-search-8ba": {
+  "/zh-Hans/api/advanced-search/album-advanced-search-e55": {
     "__comp": "17896441",
     "content": "e582c257"
   },
-  "/api/advanced-search/artist-advanced-search-6ad": {
+  "/zh-Hans/api/advanced-search/artist-advanced-search-a98": {
     "__comp": "17896441",
     "content": "ad1b31bf"
   },
-  "/api/advanced-search/genre-advanced-search-31c": {
+  "/zh-Hans/api/advanced-search/genre-advanced-search-7f6": {
     "__comp": "17896441",
     "content": "72951159"
   },
-  "/api/advanced-search/label-advanced-search-77d": {
+  "/zh-Hans/api/advanced-search/label-advanced-search-eb1": {
     "__comp": "17896441",
     "content": "f341ae6d"
   },
-  "/api/advanced-search/playlist-advanced-search-fde": {
+  "/zh-Hans/api/advanced-search/playlist-advanced-search-3cd": {
     "__comp": "17896441",
     "content": "153df6b6"
   },
-  "/api/advanced-search/podcast-advanced-search-d84": {
+  "/zh-Hans/api/advanced-search/podcast-advanced-search-3d1": {
     "__comp": "17896441",
     "content": "e779f320"
   },
-  "/api/advanced-search/podcast-episode-advanced-search-94f": {
+  "/zh-Hans/api/advanced-search/podcast-episode-advanced-search-28b": {
     "__comp": "17896441",
     "content": "dee69afc"
   },
-  "/api/advanced-search/song-advanced-search-e4c": {
+  "/zh-Hans/api/advanced-search/song-advanced-search-6fe": {
     "__comp": "17896441",
     "content": "81d7065b"
   },
-  "/api/advanced-search/user-advanced-search-b3f": {
+  "/zh-Hans/api/advanced-search/user-advanced-search-2b6": {
     "__comp": "17896441",
     "content": "e35948a5"
   },
-  "/api/advanced-search/video-advanced-search-a9e": {
+  "/zh-Hans/api/advanced-search/video-advanced-search-527": {
     "__comp": "17896441",
     "content": "6d0d11be"
   },
-  "/api/api-3/-36a": {
+  "/zh-Hans/api/api-3/-756": {
     "__comp": "17896441",
     "content": "a30617b3"
   },
-  "/api/api-3/api-errors-07e": {
+  "/zh-Hans/api/api-3/api-errors-2d5": {
     "__comp": "17896441",
     "content": "726f033e"
   },
-  "/api/api-3/api-xml-methods-044": {
+  "/zh-Hans/api/api-3/api-xml-methods-3f9": {
     "__comp": "17896441",
     "content": "f1ca8204"
   },
-  "/api/api-4/-c61": {
+  "/zh-Hans/api/api-4/-8d9": {
     "__comp": "17896441",
     "content": "dd63b8e6"
   },
-  "/api/api-4/api-advanced-search-976": {
+  "/zh-Hans/api/api-4/api-advanced-search-3b6": {
     "__comp": "17896441",
     "content": "9294767e"
   },
-  "/api/api-4/api-errors-062": {
+  "/zh-Hans/api/api-4/api-errors-779": {
     "__comp": "17896441",
     "content": "728e62bf"
   },
-  "/api/api-4/api-json-methods-646": {
+  "/zh-Hans/api/api-4/api-json-methods-998": {
     "__comp": "17896441",
     "content": "93451503"
   },
-  "/api/api-4/api-xml-methods-51e": {
+  "/zh-Hans/api/api-4/api-xml-methods-36c": {
     "__comp": "17896441",
     "content": "6b0862e0"
   },
-  "/api/api-5/-2df": {
+  "/zh-Hans/api/api-5/-4f9": {
     "__comp": "17896441",
     "content": "86f316e8"
   },
-  "/api/api-5/api-advanced-search-2b0": {
+  "/zh-Hans/api/api-5/api-advanced-search-d70": {
     "__comp": "17896441",
     "content": "bb078ad8"
   },
-  "/api/api-5/api-errors-874": {
+  "/zh-Hans/api/api-5/api-errors-173": {
     "__comp": "17896441",
     "content": "649ee774"
   },
-  "/api/api-5/api-json-methods-a92": {
+  "/zh-Hans/api/api-5/api-json-methods-79f": {
     "__comp": "17896441",
     "content": "d243ae8e"
   },
-  "/api/api-5/api-standards-2b7": {
+  "/zh-Hans/api/api-5/api-standards-f80": {
     "__comp": "17896441",
     "content": "7bad711c"
   },
-  "/api/api-5/api-xml-methods-d3b": {
+  "/zh-Hans/api/api-5/api-xml-methods-80b": {
     "__comp": "17896441",
     "content": "0cc0f53b"
   },
-  "/api/api-advanced-search-b41": {
+  "/zh-Hans/api/api-advanced-search-998": {
     "__comp": "17896441",
     "content": "af712281"
   },
-  "/api/api-browse-2e9": {
+  "/zh-Hans/api/api-browse-21e": {
     "__comp": "17896441",
     "content": "d4274c0f"
   },
-  "/api/api-changelog-cac": {
+  "/zh-Hans/api/api-changelog-45d": {
     "__comp": "17896441",
     "content": "8f881495"
   },
-  "/api/api-errors-234": {
+  "/zh-Hans/api/api-errors-db5": {
     "__comp": "17896441",
     "content": "4fe6f5f6"
   },
-  "/api/api-examples-c2f": {
+  "/zh-Hans/api/api-examples-803": {
     "__comp": "17896441",
     "content": "0c2cabae"
   },
-  "/api/api-json-methods-d4e": {
+  "/zh-Hans/api/api-json-methods-d14": {
     "__comp": "17896441",
     "content": "7648e83e"
   },
-  "/api/api-media-methods-fee": {
+  "/zh-Hans/api/api-media-methods-a55": {
     "__comp": "17896441",
     "content": "88a3a317"
   },
-  "/api/api-standards-bbb": {
+  "/zh-Hans/api/api-standards-68a": {
     "__comp": "17896441",
     "content": "0fe4a661"
   },
-  "/api/api-xml-methods-736": {
+  "/zh-Hans/api/api-xml-methods-cda": {
     "__comp": "17896441",
     "content": "377cc410"
   },
-  "/api/browse/album-browse-0cd": {
+  "/zh-Hans/api/browse/album-browse-0f7": {
     "__comp": "17896441",
     "content": "7516d9ae"
   },
-  "/api/browse/artist-browse-b52": {
+  "/zh-Hans/api/browse/artist-browse-7a2": {
     "__comp": "17896441",
     "content": "c8d5bc76"
   },
-  "/api/browse/catalog-browse-245": {
+  "/zh-Hans/api/browse/catalog-browse-9e8": {
     "__comp": "17896441",
     "content": "92f1878c"
   },
-  "/api/browse/follower-browse-a9d": {
+  "/zh-Hans/api/browse/follower-browse-187": {
     "__comp": "17896441",
     "content": "8e74b3d1"
   },
-  "/api/browse/genre-browse-671": {
+  "/zh-Hans/api/browse/genre-browse-30a": {
     "__comp": "17896441",
     "content": "a17b0ce7"
   },
-  "/api/browse/label-browse-97d": {
+  "/zh-Hans/api/browse/label-browse-1bf": {
     "__comp": "17896441",
     "content": "cc44bb07"
   },
-  "/api/browse/license-browse-9ac": {
+  "/zh-Hans/api/browse/license-browse-360": {
     "__comp": "17896441",
     "content": "2b605e68"
   },
-  "/api/browse/live_stream-browse-a39": {
+  "/zh-Hans/api/browse/live_stream-browse-e32": {
     "__comp": "17896441",
     "content": "4191441a"
   },
-  "/api/browse/playlist-browse-c94": {
+  "/zh-Hans/api/browse/playlist-browse-14e": {
     "__comp": "17896441",
     "content": "b8e5827c"
   },
-  "/api/browse/podcast_episode-browse-39b": {
+  "/zh-Hans/api/browse/podcast_episode-browse-200": {
     "__comp": "17896441",
     "content": "c492016b"
   },
-  "/api/browse/podcast-browse-6db": {
+  "/zh-Hans/api/browse/podcast-browse-93e": {
     "__comp": "17896441",
     "content": "32633d9c"
   },
-  "/api/browse/share-browse-220": {
+  "/zh-Hans/api/browse/share-browse-077": {
     "__comp": "17896441",
     "content": "5faceae4"
   },
-  "/api/browse/song-browse-6dd": {
+  "/zh-Hans/api/browse/song-browse-f76": {
     "__comp": "17896441",
     "content": "0f16c47b"
   },
-  "/api/browse/user-browse-713": {
+  "/zh-Hans/api/browse/user-browse-4c9": {
     "__comp": "17896441",
     "content": "3afb41b9"
   },
-  "/api/browse/video-browse-3f0": {
+  "/zh-Hans/api/browse/video-browse-d0a": {
     "__comp": "17896441",
     "content": "c0d04e3d"
   },
-  "/api/subsonic-e82": {
+  "/zh-Hans/api/subsonic-188": {
     "__comp": "17896441",
     "content": "b08b5c0a"
   },
-  "/api/versions/-a8f": {
+  "/zh-Hans/api/versions/-c34": {
     "__comp": "17896441",
     "content": "d2ad50d3"
   },
-  "/api/versions/api-4.1/-33d": {
+  "/zh-Hans/api/versions/api-4.1/-b6e": {
     "__comp": "17896441",
     "content": "b9a7d823"
   },
-  "/api/versions/api-4.1/api-errors-03f": {
+  "/zh-Hans/api/versions/api-4.1/api-errors-14d": {
     "__comp": "17896441",
     "content": "91d4329f"
   },
-  "/api/versions/api-4.1/xml-methods-0b5": {
+  "/zh-Hans/api/versions/api-4.1/xml-methods-12d": {
     "__comp": "17896441",
     "content": "230d481f"
   },
-  "/api/versions/api-4.2/-034": {
+  "/zh-Hans/api/versions/api-4.2/-058": {
     "__comp": "17896441",
     "content": "35335e9d"
   },
-  "/api/versions/api-4.2/api-advanced-search-dbc": {
+  "/zh-Hans/api/versions/api-4.2/api-advanced-search-2a9": {
     "__comp": "17896441",
     "content": "4c4b4646"
   },
-  "/api/versions/api-4.2/api-errors-27c": {
+  "/zh-Hans/api/versions/api-4.2/api-errors-b47": {
     "__comp": "17896441",
     "content": "026a7e03"
   },
-  "/api/versions/api-4.2/api-json-methods-91c": {
+  "/zh-Hans/api/versions/api-4.2/api-json-methods-bac": {
     "__comp": "17896441",
     "content": "977f5244"
   },
-  "/api/versions/api-4.2/api-xml-methods-eea": {
+  "/zh-Hans/api/versions/api-4.2/api-xml-methods-22b": {
     "__comp": "17896441",
     "content": "55464df1"
   },
-  "/api/versions/api-4.3/-8a8": {
+  "/zh-Hans/api/versions/api-4.3/-ba1": {
     "__comp": "17896441",
     "content": "09d6c510"
   },
-  "/api/versions/api-4.3/api-advanced-search-1a3": {
+  "/zh-Hans/api/versions/api-4.3/api-advanced-search-d77": {
     "__comp": "17896441",
     "content": "bb85ad74"
   },
-  "/api/versions/api-4.3/api-errors-f3e": {
+  "/zh-Hans/api/versions/api-4.3/api-errors-3c0": {
     "__comp": "17896441",
     "content": "45e29da0"
   },
-  "/api/versions/api-4.3/api-json-methods-565": {
+  "/zh-Hans/api/versions/api-4.3/api-json-methods-bb0": {
     "__comp": "17896441",
     "content": "98416ac1"
   },
-  "/api/versions/api-4.3/api-xml-methods-5dc": {
+  "/zh-Hans/api/versions/api-4.3/api-xml-methods-445": {
     "__comp": "17896441",
     "content": "6aa70f5e"
   },
-  "/api/versions/api-5.0/-555": {
+  "/zh-Hans/api/versions/api-5.0/-50e": {
     "__comp": "17896441",
     "content": "4f1eb2f2"
   },
-  "/api/versions/api-5.0/api-advanced-search-ff0": {
+  "/zh-Hans/api/versions/api-5.0/api-advanced-search-6e4": {
     "__comp": "17896441",
     "content": "7a29e758"
   },
-  "/api/versions/api-5.0/api-errors-750": {
+  "/zh-Hans/api/versions/api-5.0/api-errors-5ff": {
     "__comp": "17896441",
     "content": "b86d3cce"
   },
-  "/api/versions/api-5.0/api-json-methods-535": {
+  "/zh-Hans/api/versions/api-5.0/api-json-methods-e87": {
     "__comp": "17896441",
     "content": "8f143521"
   },
-  "/api/versions/api-5.0/api-standards-ef1": {
+  "/zh-Hans/api/versions/api-5.0/api-standards-3ad": {
     "__comp": "17896441",
     "content": "35d81bf3"
   },
-  "/api/versions/api-5.0/api-xml-methods-30a": {
+  "/zh-Hans/api/versions/api-5.0/api-xml-methods-55e": {
     "__comp": "17896441",
     "content": "97ffc2a0"
   },
-  "/api/versions/api-5.1/-7af": {
+  "/zh-Hans/api/versions/api-5.1/-a95": {
     "__comp": "17896441",
     "content": "5ae43e4f"
   },
-  "/api/versions/api-5.1/api-advanced-search-40e": {
+  "/zh-Hans/api/versions/api-5.1/api-advanced-search-cb0": {
     "__comp": "17896441",
     "content": "740b8166"
   },
-  "/api/versions/api-5.1/api-errors-1c9": {
+  "/zh-Hans/api/versions/api-5.1/api-errors-3e9": {
     "__comp": "17896441",
     "content": "0b4a39ad"
   },
-  "/api/versions/api-5.1/api-json-methods-2d9": {
+  "/zh-Hans/api/versions/api-5.1/api-json-methods-478": {
     "__comp": "17896441",
     "content": "2c67137f"
   },
-  "/api/versions/api-5.1/api-standards-bda": {
+  "/zh-Hans/api/versions/api-5.1/api-standards-d2c": {
     "__comp": "17896441",
     "content": "07fa0d17"
   },
-  "/api/versions/api-5.1/api-xml-methods-365": {
+  "/zh-Hans/api/versions/api-5.1/api-xml-methods-37d": {
     "__comp": "17896441",
     "content": "b28fc128"
   },
-  "/api/versions/api-6.0/-413": {
+  "/zh-Hans/api/versions/api-6.0/-d16": {
     "__comp": "17896441",
     "content": "ad97f3fa"
   },
-  "/api/versions/api-6.0/api-advanced-search-d5d": {
+  "/zh-Hans/api/versions/api-6.0/api-advanced-search-aba": {
     "__comp": "17896441",
     "content": "1dd48972"
   },
-  "/api/versions/api-6.0/api-errors-8f0": {
+  "/zh-Hans/api/versions/api-6.0/api-errors-035": {
     "__comp": "17896441",
     "content": "51ac0b87"
   },
-  "/api/versions/api-6.0/api-json-methods-d27": {
+  "/zh-Hans/api/versions/api-6.0/api-json-methods-850": {
     "__comp": "17896441",
     "content": "7cc76459"
   },
-  "/api/versions/api-6.0/api-standards-3cb": {
+  "/zh-Hans/api/versions/api-6.0/api-standards-e67": {
     "__comp": "17896441",
     "content": "959b5f6c"
   },
-  "/api/versions/api-6.0/api-xml-methods-ee7": {
+  "/zh-Hans/api/versions/api-6.0/api-xml-methods-077": {
     "__comp": "17896441",
     "content": "b9e410ca"
   },
-  "/demo-b90": {
+  "/zh-Hans/demo-8dd": {
     "__comp": "17896441",
     "content": "74b23640"
   },
-  "/docker-f8e": {
+  "/zh-Hans/docker-afb": {
     "__comp": "17896441",
     "content": "93234bd6"
   },
-  "/docs/-29e": {
+  "/zh-Hans/docs/-3ce": {
     "__comp": "17896441",
     "content": "dcc56147"
   },
-  "/docs/clients/-f32": {
+  "/zh-Hans/docs/clients/-231": {
     "__comp": "17896441",
     "content": "af5b4406"
   },
-  "/docs/clients/api-01b": {
+  "/zh-Hans/docs/clients/api-2d1": {
     "__comp": "17896441",
     "content": "8afd6f4d"
   },
-  "/docs/clients/demo-server-d1a": {
+  "/zh-Hans/docs/clients/demo-server-c10": {
     "__comp": "17896441",
     "content": "7d652b0d"
   },
-  "/docs/configuration/-454": {
+  "/zh-Hans/docs/configuration/-479": {
     "__comp": "17896441",
     "content": "7fd176aa"
   },
-  "/docs/configuration/acl-dda": {
+  "/zh-Hans/docs/configuration/acl-692": {
     "__comp": "17896441",
     "content": "edc1634a"
   },
-  "/docs/configuration/Ampache-Icecast-and-Liquidsoap-488": {
+  "/zh-Hans/docs/configuration/Ampache-Icecast-and-Liquidsoap-81e": {
     "__comp": "17896441",
     "content": "1a859447"
   },
-  "/docs/configuration/api-637": {
+  "/zh-Hans/docs/configuration/api-ea8": {
     "__comp": "17896441",
     "content": "c67f2713"
   },
-  "/docs/configuration/broadcasts-ada": {
+  "/zh-Hans/docs/configuration/broadcasts-5a8": {
     "__comp": "17896441",
     "content": "65c46765"
   },
-  "/docs/configuration/catalog-filters-6ad": {
+  "/zh-Hans/docs/configuration/catalog-filters-c39": {
     "__comp": "17896441",
     "content": "b0b46158"
   },
-  "/docs/configuration/cron-cde": {
+  "/zh-Hans/docs/configuration/cron-004": {
     "__comp": "17896441",
     "content": "5959ebb0"
   },
-  "/docs/configuration/democratic-256": {
+  "/zh-Hans/docs/configuration/democratic-e0e": {
     "__comp": "17896441",
     "content": "12286da7"
   },
-  "/docs/configuration/ldap-041": {
+  "/zh-Hans/docs/configuration/ldap-b78": {
     "__comp": "17896441",
     "content": "05f12e68"
   },
-  "/docs/configuration/localplay/-339": {
+  "/zh-Hans/docs/configuration/localplay/-224": {
     "__comp": "17896441",
     "content": "d8451338"
   },
-  "/docs/configuration/localplay/httpq-278": {
+  "/zh-Hans/docs/configuration/localplay/httpq-f27": {
     "__comp": "17896441",
     "content": "59c5affa"
   },
-  "/docs/configuration/localplay/kodi-0ac": {
+  "/zh-Hans/docs/configuration/localplay/kodi-a4b": {
     "__comp": "17896441",
     "content": "ff34b2e1"
   },
-  "/docs/configuration/localplay/localplay-api-240": {
+  "/zh-Hans/docs/configuration/localplay/localplay-api-c9e": {
     "__comp": "17896441",
     "content": "56564767"
   },
-  "/docs/configuration/localplay/mpd-6c3": {
+  "/zh-Hans/docs/configuration/localplay/mpd-cae": {
     "__comp": "17896441",
     "content": "5e1fe949"
   },
-  "/docs/configuration/localplay/Sample-Config-With-ALSA-and-Raspberry-PI-b56": {
+  "/zh-Hans/docs/configuration/localplay/Sample-Config-With-ALSA-and-Raspberry-PI-df8": {
     "__comp": "17896441",
     "content": "4e3818e6"
   },
-  "/docs/configuration/localplay/Sample-MPD-Config-For-Ampache-a91": {
+  "/zh-Hans/docs/configuration/localplay/Sample-MPD-Config-For-Ampache-b11": {
     "__comp": "17896441",
     "content": "cf9e70eb"
   },
-  "/docs/configuration/localplay/upnp-7fe": {
+  "/zh-Hans/docs/configuration/localplay/upnp-42a": {
     "__comp": "17896441",
     "content": "a03bb4ab"
   },
-  "/docs/configuration/localplay/vlc-51a": {
+  "/zh-Hans/docs/configuration/localplay/vlc-b67": {
     "__comp": "17896441",
     "content": "d2afa365"
   },
-  "/docs/configuration/multi-artist-beb": {
+  "/zh-Hans/docs/configuration/multi-artist-ea4": {
     "__comp": "17896441",
     "content": "01e4a36f"
   },
-  "/docs/configuration/podcasts-10e": {
+  "/zh-Hans/docs/configuration/podcasts-104": {
     "__comp": "17896441",
     "content": "8da5f991"
   },
-  "/docs/configuration/remote-catalogs-f33": {
+  "/zh-Hans/docs/configuration/remote-catalogs-d2d": {
     "__comp": "17896441",
     "content": "13f476e6"
   },
-  "/docs/configuration/subsonic-f76": {
+  "/zh-Hans/docs/configuration/subsonic-606": {
     "__comp": "17896441",
     "content": "8a3c7085"
   },
-  "/docs/configuration/transcoding/-227": {
+  "/zh-Hans/docs/configuration/transcoding/-107": {
     "__comp": "17896441",
     "content": "eadcafc5"
   },
-  "/docs/configuration/transcoding/transcode-caching-75f": {
+  "/zh-Hans/docs/configuration/transcoding/transcode-caching-d23": {
     "__comp": "17896441",
     "content": "f08334ec"
   },
-  "/docs/development/-a04": {
+  "/zh-Hans/docs/development/-8cb": {
     "__comp": "17896441",
     "content": "fa9b9a4b"
   },
-  "/docs/development/branch-layout-2c7": {
+  "/zh-Hans/docs/development/branch-layout-e76": {
     "__comp": "17896441",
     "content": "d5e3924e"
   },
-  "/docs/development/CONTRIBUTING-145": {
+  "/zh-Hans/docs/development/CONTRIBUTING-527": {
     "__comp": "17896441",
     "content": "f04d8643"
   },
-  "/docs/development/enhancement-requests-e9a": {
+  "/zh-Hans/docs/development/enhancement-requests-0db": {
     "__comp": "17896441",
     "content": "766280b4"
   },
-  "/docs/development/issue-template-97b": {
+  "/zh-Hans/docs/development/issue-template-2ae": {
     "__comp": "17896441",
     "content": "a4abf10d"
   },
-  "/docs/development/TRANSLATIONS-b7d": {
+  "/zh-Hans/docs/development/TRANSLATIONS-aeb": {
     "__comp": "17896441",
     "content": "253abc64"
   },
-  "/docs/help/-ebf": {
+  "/zh-Hans/docs/help/-946": {
     "__comp": "17896441",
     "content": "437948fb"
   },
-  "/docs/help/cli-update-warning-1ca": {
+  "/zh-Hans/docs/help/cli-update-warning-69b": {
     "__comp": "17896441",
     "content": "1a745cba"
   },
-  "/docs/help/import-lastfm-data-d9b": {
+  "/zh-Hans/docs/help/import-lastfm-data-889": {
     "__comp": "17896441",
     "content": "83c00340"
   },
-  "/docs/help/preferences-explained-b00": {
+  "/zh-Hans/docs/help/preferences-explained-140": {
     "__comp": "17896441",
     "content": "4d024272"
   },
-  "/docs/help/troubleshooting/ampache7-for-admins-6f2": {
+  "/zh-Hans/docs/help/troubleshooting/ampache7-for-admins-7b8": {
     "__comp": "17896441",
     "content": "94b8516f"
   },
-  "/docs/help/troubleshooting/ampache7-for-users-c39": {
+  "/zh-Hans/docs/help/troubleshooting/ampache7-for-users-494": {
     "__comp": "17896441",
     "content": "805934d5"
   },
-  "/docs/help/troubleshooting/chart-faq-859": {
+  "/zh-Hans/docs/help/troubleshooting/chart-faq-ce1": {
     "__comp": "17896441",
     "content": "f221d8e3"
   },
-  "/docs/help/troubleshooting/cli-ef2": {
+  "/zh-Hans/docs/help/troubleshooting/cli-da0": {
     "__comp": "17896441",
     "content": "92f5c44b"
   },
-  "/docs/help/troubleshooting/faq-a77": {
+  "/zh-Hans/docs/help/troubleshooting/faq-474": {
     "__comp": "17896441",
     "content": "37a8d742"
   },
-  "/docs/help/upload-catalogs-c25": {
+  "/zh-Hans/docs/help/upload-catalogs-f3a": {
     "__comp": "17896441",
     "content": "299c14fb"
   },
-  "/docs/information/ampache-use-cases-d6a": {
+  "/zh-Hans/docs/information/ampache-use-cases-9d7": {
     "__comp": "17896441",
     "content": "1fc41555"
   },
-  "/docs/information/ampache7-client-structure-install-type-976": {
+  "/zh-Hans/docs/information/ampache7-client-structure-install-type-1bb": {
     "__comp": "17896441",
     "content": "feeae3c9"
   },
-  "/docs/information/TV-Shows-and-Movies-96d": {
+  "/zh-Hans/docs/information/TV-Shows-and-Movies-da6": {
     "__comp": "17896441",
     "content": "a680a6c4"
   },
-  "/docs/information/upgrade-598": {
+  "/zh-Hans/docs/information/upgrade-b48": {
     "__comp": "17896441",
     "content": "2c05c577"
   },
-  "/docs/information/Web-Interface-07f": {
+  "/zh-Hans/docs/information/Web-Interface-6ee": {
     "__comp": "17896441",
     "content": "21cebfea"
   },
-  "/docs/information/web-player-97f": {
+  "/zh-Hans/docs/information/web-player-76d": {
     "__comp": "17896441",
     "content": "067a7861"
   },
-  "/docs/information/which-zip-5ce": {
+  "/zh-Hans/docs/information/which-zip-3b3": {
     "__comp": "17896441",
     "content": "948d7fb8"
   },
-  "/docs/installation/-bba": {
+  "/zh-Hans/docs/installation/-c4a": {
     "__comp": "17896441",
     "content": "1bf865ac"
   },
-  "/docs/installation/catalog-b3f": {
+  "/zh-Hans/docs/installation/catalog-a20": {
     "__comp": "17896441",
     "content": "aeecb04c"
   },
-  "/docs/installation/guides/-45f": {
+  "/zh-Hans/docs/installation/guides/-f84": {
     "__comp": "17896441",
     "content": "cca4f788"
   },
-  "/docs/installation/guides/cloudron-installation-guide-408": {
+  "/zh-Hans/docs/installation/guides/cloudron-installation-guide-bc5": {
     "__comp": "17896441",
     "content": "4aade0fb"
   },
-  "/docs/installation/guides/sephtan-installation-guide-fdc": {
+  "/zh-Hans/docs/installation/guides/sephtan-installation-guide-7f0": {
     "__comp": "17896441",
     "content": "901d16cd"
   },
-  "/docs/installation/guides/tutorial-to-install-ampache-on-xampp-ed4": {
+  "/zh-Hans/docs/installation/guides/tutorial-to-install-ampache-on-xampp-d94": {
     "__comp": "17896441",
     "content": "b9e3d05a"
   },
-  "/docs/installation/guides/windows-installation-on-iis7.5-from-he99-0f6": {
+  "/zh-Hans/docs/installation/guides/windows-installation-on-iis7.5-from-he99-b9f": {
     "__comp": "17896441",
     "content": "5a307ee9"
   },
-  "/docs/installation/install-ampache-on-ubuntu2204-79f": {
+  "/zh-Hans/docs/installation/install-ampache-on-ubuntu2204-aab": {
     "__comp": "17896441",
     "content": "d2fc4b74"
   },
-  "/docs/installation/windows-installation-guide-e63": {
+  "/zh-Hans/docs/installation/windows-installation-guide-978": {
     "__comp": "17896441",
     "content": "7dbfc63e"
   },
-  "/docs/old-information/-1c4": {
+  "/zh-Hans/docs/old-information/-187": {
     "__comp": "17896441",
     "content": "44277341"
   },
-  "/docs/old-information/ampache-laravel-next-generation-preview-dcd": {
+  "/zh-Hans/docs/old-information/ampache-laravel-next-generation-preview-f24": {
     "__comp": "17896441",
     "content": "cce1fb7f"
   },
-  "/docs/old-information/ampache5-changes-b48": {
+  "/zh-Hans/docs/old-information/ampache5-changes-69b": {
     "__comp": "17896441",
     "content": "20cfd3bf"
   },
-  "/docs/old-information/ampache5-for-users-575": {
+  "/zh-Hans/docs/old-information/ampache5-for-users-b2e": {
     "__comp": "17896441",
     "content": "84a903ad"
   },
-  "/docs/old-information/ampache6-details-878": {
+  "/zh-Hans/docs/old-information/ampache6-details-a99": {
     "__comp": "17896441",
     "content": "199e6b3c"
   },
-  "/docs/old-information/ampache6-for-users-78d": {
+  "/zh-Hans/docs/old-information/ampache6-for-users-208": {
     "__comp": "17896441",
     "content": "d29cc269"
   },
-  "/docs/old-information/installation-v4-6d4": {
+  "/zh-Hans/docs/old-information/installation-v4-aa3": {
     "__comp": "17896441",
     "content": "346ac758"
   },
-  "/docs/old-information/mysql-faq-fcf": {
+  "/zh-Hans/docs/old-information/mysql-faq-828": {
     "__comp": "17896441",
     "content": "e3065b78"
   },
-  "/docs/plugins/-a66": {
+  "/zh-Hans/docs/plugins/-1c1": {
     "__comp": "17896441",
     "content": "194fe6c3"
   },
-  "/docs/plugins/writing-plugins-f54": {
+  "/zh-Hans/docs/plugins/writing-plugins-71e": {
     "__comp": "17896441",
     "content": "bcc060e0"
   },
-  "/docs/themes-a24": {
+  "/zh-Hans/docs/themes-765": {
     "__comp": "17896441",
     "content": "a5df7bf5"
   },
-  "/donate-d13": {
+  "/zh-Hans/donate-a21": {
     "__comp": "17896441",
     "content": "1c56b476"
   },
-  "/download-f55": {
+  "/zh-Hans/download-ef6": {
     "__comp": "17896441",
     "content": "f9e23376"
   },
-  "/links-c0e": {
+  "/zh-Hans/links-bda": {
     "__comp": "17896441",
     "content": "ff3a37c9"
   },
-  "/rest/-292": {
+  "/zh-Hans/rest/-d7b": {
     "__comp": "17896441",
     "content": "46ede4ea"
   },
-  "/-928": {
+  "/zh-Hans/-a35": {
     "__comp": "17896441",
     "content": "c377a04b"
   }

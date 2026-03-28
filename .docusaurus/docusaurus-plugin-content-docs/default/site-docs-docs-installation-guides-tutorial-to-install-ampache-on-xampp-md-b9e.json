@@ -5,7 +5,7 @@
   "source": "@site/docs/docs/installation/guides/tutorial-to-install-ampache-on-xampp.md",
   "sourceDirName": "docs/installation/guides",
   "slug": "/docs/installation/guides/tutorial-to-install-ampache-on-xampp",
-  "permalink": "/docs/installation/guides/tutorial-to-install-ampache-on-xampp",
+  "permalink": "/zh-Hans/docs/installation/guides/tutorial-to-install-ampache-on-xampp",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -18,10 +18,10 @@
   "sidebar": "api",
   "previous": {
     "title": "User Guides",
-    "permalink": "/docs/installation/guides/"
+    "permalink": "/zh-Hans/docs/installation/guides/"
   },
   "next": {
     "title": "Sephten's Install guide",
-    "permalink": "/docs/installation/guides/sephtan-installation-guide"
+    "permalink": "/zh-Hans/docs/installation/guides/sephtan-installation-guide"
   }
 }

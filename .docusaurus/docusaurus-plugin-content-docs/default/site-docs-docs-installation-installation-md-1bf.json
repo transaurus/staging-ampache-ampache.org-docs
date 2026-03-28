@@ -5,7 +5,7 @@
   "source": "@site/docs/docs/installation/installation.md",
   "sourceDirName": "docs/installation",
   "slug": "/docs/installation/",
-  "permalink": "/docs/installation/",
+  "permalink": "/zh-Hans/docs/installation/",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -18,10 +18,10 @@
   "sidebar": "api",
   "previous": {
     "title": "Ampache Use Cases",
-    "permalink": "/docs/information/ampache-use-cases"
+    "permalink": "/zh-Hans/docs/information/ampache-use-cases"
   },
   "next": {
     "title": "Which zip?",
-    "permalink": "/docs/information/which-zip"
+    "permalink": "/zh-Hans/docs/information/which-zip"
   }
 }

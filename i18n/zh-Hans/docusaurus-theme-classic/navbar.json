@@ -1,0 +1,38 @@
+{
+  "title": {
+    "message": "Ampache",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Ampache Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Demo": {
+    "message": "Demo",
+    "description": "Navbar item with label Demo"
+  },
+  "item.label.Donate": {
+    "message": "Donate",
+    "description": "Navbar item with label Donate"
+  },
+  "item.label.Docker": {
+    "message": "Docker",
+    "description": "Navbar item with label Docker"
+  },
+  "item.label.Download": {
+    "message": "Download",
+    "description": "Navbar item with label Download"
+  },
+  "item.label.Wiki": {
+    "message": "Wiki",
+    "description": "Navbar item with label Wiki"
+  },
+  "item.label.API": {
+    "message": "API",
+    "description": "Navbar item with label API"
+  },
+  "item.label.Links": {
+    "message": "Links",
+    "description": "Navbar item with label Links"
+  }
+}

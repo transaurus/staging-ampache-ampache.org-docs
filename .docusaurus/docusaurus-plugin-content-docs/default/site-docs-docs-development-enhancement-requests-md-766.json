@@ -5,7 +5,7 @@
   "source": "@site/docs/docs/development/enhancement-requests.md",
   "sourceDirName": "docs/development",
   "slug": "/docs/development/enhancement-requests",
-  "permalink": "/docs/development/enhancement-requests",
+  "permalink": "/zh-Hans/docs/development/enhancement-requests",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -18,10 +18,10 @@
   "sidebar": "api",
   "previous": {
     "title": "Issues",
-    "permalink": "/docs/development/issue-template"
+    "permalink": "/zh-Hans/docs/development/issue-template"
   },
   "next": {
     "title": "Help",
-    "permalink": "/docs/help/"
+    "permalink": "/zh-Hans/docs/help/"
   }
 }

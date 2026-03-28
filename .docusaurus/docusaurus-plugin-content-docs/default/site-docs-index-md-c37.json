@@ -5,7 +5,7 @@
   "source": "@site/docs/index.md",
   "sourceDirName": ".",
   "slug": "/",
-  "permalink": "/",
+  "permalink": "/zh-Hans/",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -18,6 +18,6 @@
   "sidebar": "api",
   "next": {
     "title": "Demo",
-    "permalink": "/demo"
+    "permalink": "/zh-Hans/demo"
   }
 }

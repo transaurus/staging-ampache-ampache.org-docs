@@ -1,0 +1,106 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.api.category.Wiki": {
+    "message": "Wiki",
+    "description": "The label for category 'Wiki' in sidebar 'api'"
+  },
+  "sidebar.api.category.Installation": {
+    "message": "Installation",
+    "description": "The label for category 'Installation' in sidebar 'api'"
+  },
+  "sidebar.api.category.User Guides": {
+    "message": "User Guides",
+    "description": "The label for category 'User Guides' in sidebar 'api'"
+  },
+  "sidebar.api.category.Configuration": {
+    "message": "Configuration",
+    "description": "The label for category 'Configuration' in sidebar 'api'"
+  },
+  "sidebar.api.category.Localplay": {
+    "message": "Localplay",
+    "description": "The label for category 'Localplay' in sidebar 'api'"
+  },
+  "sidebar.api.category.Transcoding": {
+    "message": "Transcoding",
+    "description": "The label for category 'Transcoding' in sidebar 'api'"
+  },
+  "sidebar.api.category.Clients": {
+    "message": "Clients",
+    "description": "The label for category 'Clients' in sidebar 'api'"
+  },
+  "sidebar.api.category.Plugins": {
+    "message": "Plugins",
+    "description": "The label for category 'Plugins' in sidebar 'api'"
+  },
+  "sidebar.api.category.Development": {
+    "message": "Development",
+    "description": "The label for category 'Development' in sidebar 'api'"
+  },
+  "sidebar.api.category.Help": {
+    "message": "Help",
+    "description": "The label for category 'Help' in sidebar 'api'"
+  },
+  "sidebar.api.category.Old Information": {
+    "message": "Old Information",
+    "description": "The label for category 'Old Information' in sidebar 'api'"
+  },
+  "sidebar.api.category.API": {
+    "message": "API",
+    "description": "The label for category 'API' in sidebar 'api'"
+  },
+  "sidebar.api.category.Browse Methods": {
+    "message": "Browse Methods",
+    "description": "The label for category 'Browse Methods' in sidebar 'api'"
+  },
+  "sidebar.api.category.Advanced Search": {
+    "message": "Advanced Search",
+    "description": "The label for category 'Advanced Search' in sidebar 'api'"
+  },
+  "sidebar.api.category.API5": {
+    "message": "API5",
+    "description": "The label for category 'API5' in sidebar 'api'"
+  },
+  "sidebar.api.category.API4": {
+    "message": "API4",
+    "description": "The label for category 'API4' in sidebar 'api'"
+  },
+  "sidebar.api.category.API3": {
+    "message": "API3",
+    "description": "The label for category 'API3' in sidebar 'api'"
+  },
+  "sidebar.api.category.Past Releases": {
+    "message": "Past Releases",
+    "description": "The label for category 'Past Releases' in sidebar 'api'"
+  },
+  "sidebar.api.category.API 6.0": {
+    "message": "API 6.0",
+    "description": "The label for category 'API 6.0' in sidebar 'api'"
+  },
+  "sidebar.api.category.API 5.1": {
+    "message": "API 5.1",
+    "description": "The label for category 'API 5.1' in sidebar 'api'"
+  },
+  "sidebar.api.category.API 5.0": {
+    "message": "API 5.0",
+    "description": "The label for category 'API 5.0' in sidebar 'api'"
+  },
+  "sidebar.api.category.API 4.3": {
+    "message": "API 4.3",
+    "description": "The label for category 'API 4.3' in sidebar 'api'"
+  },
+  "sidebar.api.category.API 4.2": {
+    "message": "API 4.2",
+    "description": "The label for category 'API 4.2' in sidebar 'api'"
+  },
+  "sidebar.api.category.API 4.1": {
+    "message": "API 4.1",
+    "description": "The label for category 'API 4.1' in sidebar 'api'"
+  },
+  "sidebar.api.link.Screenshots": {
+    "message": "Screenshots",
+    "description": "The label for link 'Screenshots' in sidebar 'api', linking to '/#preview'"
+  }
+}

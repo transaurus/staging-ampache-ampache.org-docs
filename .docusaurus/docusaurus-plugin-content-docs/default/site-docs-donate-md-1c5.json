@@ -5,7 +5,7 @@
   "source": "@site/docs/donate.md",
   "sourceDirName": ".",
   "slug": "/donate",
-  "permalink": "/donate",
+  "permalink": "/zh-Hans/donate",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -18,10 +18,10 @@
   "sidebar": "api",
   "previous": {
     "title": "Demo",
-    "permalink": "/demo"
+    "permalink": "/zh-Hans/demo"
   },
   "next": {
     "title": "Docker",
-    "permalink": "/docker"
+    "permalink": "/zh-Hans/docker"
   }
 }

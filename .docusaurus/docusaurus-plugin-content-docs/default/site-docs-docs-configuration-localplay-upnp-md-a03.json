@@ -5,7 +5,7 @@
   "source": "@site/docs/docs/configuration/localplay/upnp.md",
   "sourceDirName": "docs/configuration/localplay",
   "slug": "/docs/configuration/localplay/upnp",
-  "permalink": "/docs/configuration/localplay/upnp",
+  "permalink": "/zh-Hans/docs/configuration/localplay/upnp",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -18,10 +18,10 @@
   "sidebar": "api",
   "previous": {
     "title": "XMBC/Kodi Plugin",
-    "permalink": "/docs/configuration/localplay/kodi"
+    "permalink": "/zh-Hans/docs/configuration/localplay/kodi"
   },
   "next": {
     "title": "VLC",
-    "permalink": "/docs/configuration/localplay/vlc"
+    "permalink": "/zh-Hans/docs/configuration/localplay/vlc"
   }
 }

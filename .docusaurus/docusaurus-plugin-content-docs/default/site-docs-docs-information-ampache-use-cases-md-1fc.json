@@ -5,7 +5,7 @@
   "source": "@site/docs/docs/information/ampache-use-cases.md",
   "sourceDirName": "docs/information",
   "slug": "/docs/information/ampache-use-cases",
-  "permalink": "/docs/information/ampache-use-cases",
+  "permalink": "/zh-Hans/docs/information/ampache-use-cases",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -18,10 +18,10 @@
   "sidebar": "api",
   "previous": {
     "title": "Wiki",
-    "permalink": "/docs/"
+    "permalink": "/zh-Hans/docs/"
   },
   "next": {
     "title": "Installing Ampache",
-    "permalink": "/docs/installation/"
+    "permalink": "/zh-Hans/docs/installation/"
   }
 }

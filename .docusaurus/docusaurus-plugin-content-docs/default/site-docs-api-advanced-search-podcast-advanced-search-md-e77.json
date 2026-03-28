@@ -5,7 +5,7 @@
   "source": "@site/docs/api/advanced-search/podcast-advanced-search.md",
   "sourceDirName": "api/advanced-search",
   "slug": "/api/advanced-search/podcast-advanced-search",
-  "permalink": "/api/advanced-search/podcast-advanced-search",
+  "permalink": "/zh-Hans/api/advanced-search/podcast-advanced-search",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -18,10 +18,10 @@
   "sidebar": "api",
   "previous": {
     "title": "Playlist Search",
-    "permalink": "/api/advanced-search/playlist-advanced-search"
+    "permalink": "/zh-Hans/api/advanced-search/playlist-advanced-search"
   },
   "next": {
     "title": "Podcast Episode Search",
-    "permalink": "/api/advanced-search/podcast-episode-advanced-search"
+    "permalink": "/zh-Hans/api/advanced-search/podcast-episode-advanced-search"
   }
 }

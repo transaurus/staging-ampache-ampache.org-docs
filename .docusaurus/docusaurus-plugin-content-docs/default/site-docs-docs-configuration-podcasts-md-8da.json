@@ -5,7 +5,7 @@
   "source": "@site/docs/docs/configuration/podcasts.md",
   "sourceDirName": "docs/configuration",
   "slug": "/docs/configuration/podcasts",
-  "permalink": "/docs/configuration/podcasts",
+  "permalink": "/zh-Hans/docs/configuration/podcasts",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -18,10 +18,10 @@
   "sidebar": "api",
   "previous": {
     "title": "Broadcasts",
-    "permalink": "/docs/configuration/broadcasts"
+    "permalink": "/zh-Hans/docs/configuration/broadcasts"
   },
   "next": {
     "title": "Clients",
-    "permalink": "/docs/clients/"
+    "permalink": "/zh-Hans/docs/clients/"
   }
 }

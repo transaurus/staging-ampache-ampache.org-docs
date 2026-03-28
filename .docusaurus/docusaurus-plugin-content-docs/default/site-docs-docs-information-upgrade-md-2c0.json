@@ -5,7 +5,7 @@
   "source": "@site/docs/docs/information/upgrade.md",
   "sourceDirName": "docs/information",
   "slug": "/docs/information/upgrade",
-  "permalink": "/docs/information/upgrade",
+  "permalink": "/zh-Hans/docs/information/upgrade",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -18,10 +18,10 @@
   "sidebar": "api",
   "previous": {
     "title": "Basic Configuration",
-    "permalink": "/docs/configuration/"
+    "permalink": "/zh-Hans/docs/configuration/"
   },
   "next": {
     "title": "Remote Catalogs",
-    "permalink": "/docs/configuration/remote-catalogs"
+    "permalink": "/zh-Hans/docs/configuration/remote-catalogs"
   }
 }

@@ -5,7 +5,7 @@
   "source": "@site/docs/docs/configuration/localplay/httpq.md",
   "sourceDirName": "docs/configuration/localplay",
   "slug": "/docs/configuration/localplay/httpq",
-  "permalink": "/docs/configuration/localplay/httpq",
+  "permalink": "/zh-Hans/docs/configuration/localplay/httpq",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -18,10 +18,10 @@
   "sidebar": "api",
   "previous": {
     "title": "VLC",
-    "permalink": "/docs/configuration/localplay/vlc"
+    "permalink": "/zh-Hans/docs/configuration/localplay/vlc"
   },
   "next": {
     "title": "Localplay Controller API",
-    "permalink": "/docs/configuration/localplay/localplay-api"
+    "permalink": "/zh-Hans/docs/configuration/localplay/localplay-api"
   }
 }

@@ -5,7 +5,7 @@
   "source": "@site/docs/api/api-advanced-search.md",
   "sourceDirName": "api",
   "slug": "/api/api-advanced-search",
-  "permalink": "/api/api-advanced-search",
+  "permalink": "/zh-Hans/api/api-advanced-search",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -18,10 +18,10 @@
   "sidebar": "api",
   "previous": {
     "title": "Video Browse",
-    "permalink": "/api/browse/video-browse"
+    "permalink": "/zh-Hans/api/browse/video-browse"
   },
   "next": {
     "title": "Song Search",
-    "permalink": "/api/advanced-search/song-advanced-search"
+    "permalink": "/zh-Hans/api/advanced-search/song-advanced-search"
   }
 }
